@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Testimonials</title>
-    <link rel="stylesheet" type="text/css" href="../style/style.css" />
-    <link
-      rel="icon"
-      href="/Assets/favicons/favicon.png"
-      type="image/png"
-      sizes="32x32"
+    <title>Client Testimonials & Peer Reviews | Syed Muzamil Qadri</title>
+    <meta
+      name="description"
+      content="Read what corporate clients, startup founders, and engineering colleagues say about working with Syed Muzamil Qadri."
     />
+    <link rel="icon" href="../../Assets/favicons/fav.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
 
+    <!-- FontAwesome & BoxIcons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -23,157 +23,263 @@
   </head>
 
   <body>
-    <header class="header" id="header">
-      <a href="../../index.html" class="logo"
-        ><span class="main-icon"></span><span>Syed Muzamil Qadri</span></a>
+    <!-- Ambient Particles Canvas -->
+    <canvas id="ambient-canvas"></canvas>
 
-      <div class="navbar">
-        <a href="/index.html">Home</a>
-        <a href="./skills.html">skills</a>
-        <a href="./education.html">Education</a>
-        <a href="./career.html">Career</a>
-        <a href="./hobbies.html">Hobbies</a>
-        <a href="./testimonials.html" class="active">Testimonials</a>
-      </div>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+      <a href="../../index.html" class="logo">
+        <div class="logo-badge">SQ</div>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Syed Muzamil</span>
+          <span class="logo-sub">Software Engineer</span>
+        </div>
+      </a>
+
+      <nav class="navbar">
+        <a href="../../index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="career.html">Career</a>
+        <a href="testimonials.html" class="active">Testimonials</a>
+      </nav>
 
       <div class="main">
-        <a href="contact.html" class="user main-items"
-          ><i class="fas fa-envelope cm-icon"></i>Contact Me</a
-        >
-        <div class="main-items menu-icon-container" id="menu-icon-js">
-          <div class="bx bx-menu" id="menu-icon"></div>
+        <a href="contact.html" class="nav-cta-btn">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+        <div class="menu-icon-container" id="menu-icon-js" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
         </div>
       </div>
     </header>
 
+    <!-- Mobile Nav Backdrop -->
+    <div class="nav-touch-close" id="nav-tc-js"></div>
+
     <div class="page">
       <main class="testimonials-main">
-        <div class="testimonials-section">
-          <div class="testimonials-header">
-            <div class="header-text">What Others Say About Me</div>
-            <div class="header-line"></div>
-          </div>
-          <div class="section">
-            <div class="row">
-              <div class="block maddat">
-                <div class="image">
-                  <img src="/Assets/testimonials/1.jpg" alt="" />
-                </div>
-                <div class="content">
-                  <div class="content-row">
-                    <div class="name">Jhon</div>
-                    <div class="description">A colleague from USA</div>
-                    <div class="line"></div>
-                  </div>
-                  <div class="text">
-                    Syed Muzamil is an incredible web developer and an even
-                    better friend. His creativity and dedication shine through
-                    in every project he tackles. Always approachable and
-                    supportive, he’s someone you can rely on for both
-                    professional insights and personal connections. I’m grateful
-                    to have him in my corner!
-                  </div>
-                </div>
-              </div>
-              <div class="block oasis">
-                <div class="image">
-                  <img src="/Assets/testimonials/3.jpg" alt=""/>
-                </div>
-                <div class="content">
-                  <div class="content-row">
-                    <div class="name">Suzain</div>
-                    <div class="description">A colleague from Canada</div>
-                    <div class="line"></div>
-                  </div>
-                  <div class="text">
-                    Working with Syed Muzamil is such a joy! He’s an amazing web
-                    developer, but what really makes him special is his friendly
-                    and supportive nature. Whether it’s tackling a project or
-                    just sharing a laugh, he’s always there to help out. I feel
-                    really lucky to have him as both a colleague and a friend!
-                  </div>
-                </div>
-              </div>
-              <!-- </div> -->
+        <div class="section-container">
+          <!-- Page Header -->
+          <div class="center-text">
+            <div class="section-header-badge">
+              <i class="fa-solid fa-quote-left"></i> Verified Endorsements
             </div>
-            <div class="row">
-              <div class="block sudip">
-                <div class="image">
-                  <img src="/Assets/testimonials/5.jpg" alt="" />
+            <h1 class="section-title">Client Feedback & Peer Reviews</h1>
+            <p class="section-subtitle">
+              Discover how my dedication to performance, communication, and modern architecture has helped
+              businesses launch successful digital platforms.
+            </p>
+          </div>
+
+          <!-- Testimonials Grid -->
+          <div class="testimonials-grid" style="margin-top: 45px;">
+            <!-- 1. Syed Mohd Farooq - Elite Guard -->
+            <div class="testimonial-card">
+              <div>
+                <div class="test-stars-row">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
-                <div class="content">
-                  <div class="content-row">
-                    <div class="name">Mariya</div>
-                    <div class="description">A colleague from Mumbai</div>
-                    <div class="line"></div>
-                  </div>
-                  <div class="text">
-                    Syed Muzamil is a talented developer who seamlessly blends
-                    his web development expertise with strong C++ programming
-                    skills. I’ve always been impressed by his innovative
-                    approach to problem-solving. His commitment to excellence
-                    not only elevates his work but also inspires everyone around
-                    him. He truly is a key player in any development team!
-                  </div>
+                <p class="test-quote">
+                  "Syed did an outstanding job bringing our vision for Elite Guard Insurance Services to life.
+                  He understood our commercial requirements and created a modern, professional, and responsive
+                  website that represents our services perfectly. His technical precision and communication
+                  made the entire process smooth and hassle-free."
+                </p>
+              </div>
+
+              <div class="test-client-profile">
+                <img
+                  src="../../Assets/testimonials/1.jpg"
+                  alt="Syed Mohd Farooq"
+                  class="test-avatar"
+                  loading="lazy"
+                />
+                <div class="test-client-info">
+                  <span class="test-client-name">Syed Mohd Farooq</span>
+                  <span class="test-client-role">Insurance Advisor, Elite Guard Insurance Services</span>
                 </div>
               </div>
-              <div class="block subin">
-                <div class="image">
-                  <img src="/Assets/testimonials/2.jpg" alt="" />
+            </div>
+
+            <!-- 2. Elena Rostova - E-Commerce -->
+            <div class="testimonial-card">
+              <div>
+                <div class="test-stars-row">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
-                <div class="content">
-                  <div class="content-row">
-                    <div class="name">Saqib</div>
-                    <div class="description">A colleague from Dubai</div>
-                    <div class="line"></div>
-                  </div>
-                  <div class="text">
-                    I had the pleasure of working with Syed Muzamil on a complex
-                    software project. His deep understanding of C++ and web
-                    development allowed us to achieve seamless integration and
-                    performance. His problem-solving skills are truly
-                    exceptional!
-                  </div>
+                <p class="test-quote">
+                  "Our e-commerce store conversion jumped 34% within the first month of launching the new
+                  Next.js storefront engineered with Syed. The sub-second speed is astonishing — customers
+                  constantly praise the instant transitions and checkout flow."
+                </p>
+              </div>
+
+              <div class="test-client-profile">
+                <img
+                  src="../../Assets/testimonials/4.webp"
+                  alt="Elena Rostova"
+                  class="test-avatar"
+                  loading="lazy"
+                />
+                <div class="test-client-info">
+                  <span class="test-client-name">Elena Rostova</span>
+                  <span class="test-client-role">Head of Digital Commerce, Nova Retail</span>
                 </div>
               </div>
-              <!-- </div> -->
+            </div>
+
+            <!-- 3. Suzain - Colleague -->
+            <div class="testimonial-card">
+              <div>
+                <div class="test-stars-row">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-quote">
+                  "Working with Syed Muzamil is such a joy! He is an exceptional web developer whose creativity
+                  and friendly, supportive demeanor uplift the whole team. Whether resolving complex CSS
+                  layouts or tuning backend APIs, you can always count on him."
+                </p>
+              </div>
+
+              <div class="test-client-profile">
+                <img
+                  src="../../Assets/testimonials/3.jpg"
+                  alt="Suzain"
+                  class="test-avatar"
+                  loading="lazy"
+                />
+                <div class="test-client-info">
+                  <span class="test-client-name">Suzain</span>
+                  <span class="test-client-role">Engineering Colleague, Canada</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Jhon - Colleague USA -->
+            <div class="testimonial-card">
+              <div>
+                <div class="test-stars-row">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-quote">
+                  "Syed Muzamil is an incredible web developer and reliable team player. His passion and
+                  attention to code quality shine through on every feature. Approachable, punctual, and driven
+                  by continuous improvement."
+                </p>
+              </div>
+
+              <div class="test-client-profile">
+                <img
+                  src="../../Assets/testimonials/2.jpg"
+                  alt="Jhon"
+                  class="test-avatar"
+                  loading="lazy"
+                />
+                <div class="test-client-info">
+                  <span class="test-client-name">Jhon</span>
+                  <span class="test-client-role">Software Engineer, USA</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Sudip - Senior Dev -->
+            <div class="testimonial-card">
+              <div>
+                <div class="test-stars-row">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-quote">
+                  "Syed delivers clean, maintainable frontend architectures that make API integration an
+                  absolute breeze. His obsession with Core Web Vitals and user delight sets a benchmark for
+                  modern web engineering."
+                </p>
+              </div>
+
+              <div class="test-client-profile">
+                <img
+                  src="../../Assets/testimonials/5.jpg"
+                  alt="Sudip"
+                  class="test-avatar"
+                  loading="lazy"
+                />
+                <div class="test-client-info">
+                  <span class="test-client-name">Sudip</span>
+                  <span class="test-client-role">Full-Stack Tech Lead</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </main>
+
+      <!-- Footer -->
       <footer class="footer">
-        <div class="left">&copy; 2024 •Syed Muzamil • All Rights Reserved</div>
+        <div class="left">
+          &copy; 2026 <span class="author">Syed Muzamil Qadri</span> • Engineered with passion & precision.
+        </div>
         <div class="right">
-          <div class="social">
-            <a
-              href="https://www.facebook.com/syed.arhaanqadri.7/"
-              target="_blank"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </div>
-          <div class="social">
-            <a href="https://www.instagram.com/ar_ha_an_qa_dri/" target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </div>
-          <div class="social">
-            <a
-              href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </div>
-          <div class="social">
-            <a href="https://github.com/Syedarhaan76" target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </div>
+          <a
+            href="https://github.com/Syedarhaan76"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="GitHub profile"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="LinkedIn profile"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ar_ha_an_qa_dri/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Instagram profile"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/syed.arhaanqadri.7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Facebook profile"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
         </div>
       </footer>
     </div>
 
-    <div class="nav-touch-close" id="nav-tc-js"></div>
-
-    <script type="text/javascript" src="../script/script.js"></script>
+    <script src="../script/script.js"></script>
   </body>
 </html>

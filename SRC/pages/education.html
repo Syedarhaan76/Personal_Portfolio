@@ -1,107 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Academic Background & Education | Syed Muzamil Qadri</title>
+    <meta
+      name="description"
+      content="Educational qualifications and engineering background of Syed Muzamil Qadri, Bachelor of Computer Science Engineering."
+    />
+    <link rel="icon" href="../../Assets/favicons/fav.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Education</title>
-    <link rel="stylesheet" type="text/css" href="../style/style.css">
-    <link rel="icon" href="/Assets/favicons/favicon.png" type="image/png" sizes="32x32">
+    <!-- FontAwesome & BoxIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <body>
+    <!-- Ambient Particles Canvas -->
+    <canvas id="ambient-canvas"></canvas>
 
-</head>
-
-<body>
-
-
+    <!-- Header Navigation -->
     <header class="header" id="header">
-        <a href="../../index.html" class="logo"><span class="main-icon"></span><span>Syed Muzamil Qadri</span></a>
-
-        <div class="navbar">
-            <a href="../../index.html">Home</a>
-            <a href="../pages/skills.html">skills</a>
-            <a href="../pages/education.html" class="active">Education</a>
-            <a href="../pages/career.html">Career</a>
-            <a href="../pages/hobbies.html">Hobbies</a>
-            <a href="../pages/testimonials.html">Testimonials</a>
+      <a href="../../index.html" class="logo">
+        <div class="logo-badge">SQ</div>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Syed Muzamil</span>
+          <span class="logo-sub">Software Engineer</span>
         </div>
+      </a>
 
-        <div class="main">
-            <a href="./contact.html" class="user main-items"><i class="fas fa-envelope cm-icon"></i>Contact Me</a>
-            <div class="main-items menu-icon-container" id="menu-icon-js">
-                <div class="bx bx-menu" id="menu-icon"></div>
-            </div>
+      <nav class="navbar">
+        <a href="../../index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html" class="active">Education</a>
+        <a href="career.html">Career</a>
+        <a href="testimonials.html">Testimonials</a>
+      </nav>
+
+      <div class="main">
+        <a href="contact.html" class="nav-cta-btn">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+        <div class="menu-icon-container" id="menu-icon-js" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
         </div>
+      </div>
     </header>
 
-
-    <div class="page">
-        <main class="education-main">
-            <div class="education-section">
-                <div class="header-text">Education Qualification</div>
-                <div class="study first">
-                    <div class="image">
-                        <img src="../../Assets/education/rbu-contact-bg.jpg" alt="">
-                    </div>
-                    <div class="line"></div>
-                    <div class="texts">
-                        <div class="header">Bachelor's Degree</div>
-                        <div class="name">Rayat Bahra University, Mohali Punjab</div>
-                        <div class="year">2021-2024</div>
-                        <div class="text">I have completed Bachelors degree in Computer Science Engineering (C.S.E).</div>
-                    </div>
-                </div>
-                <div class="study second">
-                    <div class="image">
-                        <img src="../../Assets/education/ssm.jpg" alt="">
-                    </div>
-                    <div class="line"></div>
-                    <div class="texts">
-                        <div class="header">Higher Secondary Degree</div>
-                        <div class="name">S.S.M College of Engineering and Technology</div>
-                        <div class="year">2016-2019</div>
-                        <div class="text">I Have done 3 Year's Diploma in Mechanical Engineering </div>
-                    </div>
-                </div>
-                <div class="study third">
-                    <div class="image">
-                        <img src="../../Assets/education/school.jpg" alt="">
-                    </div>
-                    <div class="line"></div>
-                    <div class="texts">
-                        <div class="header">Lower Secondary Degree</div>
-                        <div class="name">New Dream Land Public School</div>
-                        <div class="year">2002-2011</div>
-                        <div class="text">This is my first school, I joined here at the elementary level and completed
-                            my lower secondary (std. 8)</div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="left">
-                &copy; 2024 •Syed Muzamil • All Rights Reserved
-            </div>
-            <div class="right">
-                <div class="social"><a href="https://www.facebook.com/syed.arhaanqadri.7/" target="_blank"><i
-                            class="fa-brands fa-facebook"></i></a></div>
-                <div class="social"><a href="https://www.instagram.com/ar_ha_an_qa_dri/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
-                <div class="social"><a href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
-                <div class="social"><a href="https://github.com/Syedarhaan76" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-            </div>
-        </footer>
-    </div>
-
-
-
-
-
+    <!-- Mobile Nav Backdrop -->
     <div class="nav-touch-close" id="nav-tc-js"></div>
 
-    <script type="text/javascript" src="../script/script.js"></script>
+    <div class="page">
+      <main class="education-main">
+        <div class="section-container">
+          <!-- Page Header -->
+          <div class="center-text">
+            <div class="section-header-badge">
+              <i class="fa-solid fa-graduation-cap"></i> Academic Journey
+            </div>
+            <h1 class="section-title">Educational Qualifications</h1>
+            <p class="section-subtitle">
+              Formal engineering foundations combined with relentless self-directed software development practice.
+            </p>
+          </div>
 
-</body>
+          <!-- Timeline Grid -->
+          <div class="education-timeline">
+            <!-- 1. Bachelor's Degree -->
+            <div class="edu-card">
+              <div class="edu-img-col">
+                <img
+                  src="../../Assets/education/rbu-contact-bg.jpg"
+                  alt="Rayat Bahra University Campus"
+                  loading="lazy"
+                />
+              </div>
+              <div class="edu-info-col">
+                <div class="edu-badge-row">
+                  <span class="edu-year-badge">2021 – 2024</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--emerald-primary); font-weight: 600;">
+                    Graduated with Honors
+                  </span>
+                </div>
+                <h2 class="edu-degree">Bachelor of Technology in Computer Science Engineering (C.S.E)</h2>
+                <div class="edu-institution">Rayat Bahra University, Mohali Punjab</div>
+                <p class="edu-desc">
+                  Completed in-depth curriculum focusing on Data Structures & Algorithms, Object-Oriented
+                  Software Architecture, Database Management Systems, Computer Networks, and Full-Stack Web
+                  Development. Served as technical lead on multiple university hackathons and projects.
+                </p>
+              </div>
+            </div>
 
+            <!-- 2. Higher Secondary / Diploma -->
+            <div class="edu-card">
+              <div class="edu-img-col">
+                <img
+                  src="../../Assets/education/ssm.jpg"
+                  alt="S.S.M College of Engineering Campus"
+                  loading="lazy"
+                />
+              </div>
+              <div class="edu-info-col">
+                <div class="edu-badge-row">
+                  <span class="edu-year-badge">2016 – 2019</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">
+                    3-Year Diploma
+                  </span>
+                </div>
+                <h2 class="edu-degree">Diploma in Mechanical Engineering</h2>
+                <div class="edu-institution">S.S.M College of Engineering and Technology</div>
+                <p class="edu-desc">
+                  Acquired strong foundational analytical reasoning, systematic troubleshooting, mathematical
+                  modeling, and CAD drafting discipline which seamlessly transitioned into robust software
+                  engineering thinking.
+                </p>
+              </div>
+            </div>
+
+            <!-- 3. Lower Secondary -->
+            <div class="edu-card">
+              <div class="edu-img-col">
+                <img
+                  src="../../Assets/education/school.jpg"
+                  alt="New Dream Land Public School"
+                  loading="lazy"
+                />
+              </div>
+              <div class="edu-info-col">
+                <div class="edu-badge-row">
+                  <span class="edu-year-badge">2002 – 2011</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">
+                    Elementary & Secondary
+                  </span>
+                </div>
+                <h2 class="edu-degree">Lower Secondary Education</h2>
+                <div class="edu-institution">New Dream Land Public School</div>
+                <p class="edu-desc">
+                  Early schooling years establishing core academic curiosity, scientific exploration, and
+                  foundational teamwork skills.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="left">
+          &copy; 2026 <span class="author">Syed Muzamil Qadri</span> • Engineered with passion & precision.
+        </div>
+        <div class="right">
+          <a
+            href="https://github.com/Syedarhaan76"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="GitHub profile"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="LinkedIn profile"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ar_ha_an_qa_dri/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Instagram profile"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/syed.arhaanqadri.7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Facebook profile"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
 </html>

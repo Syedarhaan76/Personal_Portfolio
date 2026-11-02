@@ -1,139 +1,258 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact & Technical Interview Inquiry | Syed Muzamil Qadri</title>
+    <meta
+      name="description"
+      content="Get in touch with Syed Muzamil Qadri for software engineering opportunities, contract projects, technical consultations, and hiring."
+    />
+    <link rel="icon" href="../../Assets/favicons/fav.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Me</title>
-    <link rel="stylesheet" type="text/css" href="../style/style.css">
-    <link rel="icon" href="/Assets/favicons/favicon.png" type="image/png" sizes="32x32">
+    <!-- FontAwesome & BoxIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-</head>
+  <body>
+    <!-- Ambient Particles Canvas -->
+    <canvas id="ambient-canvas"></canvas>
 
-<body>
-
-
+    <!-- Header Navigation -->
     <header class="header" id="header">
-        <a href="../../index.html" class="logo"><span class="main-icon"></span><span>Syed Muzamil Qadri</span></a>
-
-        <div class="navbar">
-            <a href="../../index.html">Home</a>
-            <a href="./skills.html">skills</a>
-            <a href="./education.html">Education</a>
-            <a href="./career.html">Career</a>
-            <a href="./hobbies.html">Hobbies</a>
-            <a href="./testimonials.html">Testimonials</a>
+      <a href="../../index.html" class="logo">
+        <div class="logo-badge">SQ</div>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Syed Muzamil</span>
+          <span class="logo-sub">Software Engineer</span>
         </div>
+      </a>
 
-        <div class="main">
-            <a href="contact.html" class="user main-items active"><i class="fas fa-envelope cm-icon"></i>Contact Me</a>
-            <div class="main-items menu-icon-container" id="menu-icon-js">
-                <div class="bx bx-menu" id="menu-icon"></div>
-            </div>
+      <nav class="navbar">
+        <a href="../../index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="career.html">Career</a>
+        <a href="testimonials.html">Testimonials</a>
+      </nav>
+
+      <div class="main">
+        <a href="contact.html" class="nav-cta-btn active">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+        <div class="menu-icon-container" id="menu-icon-js" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
         </div>
+      </div>
     </header>
 
-    <div class="page">
-        <main class="contact-main">
-            <div class="contact-full">
-                <div class="contact-section">
-                    <div class="cs-top mobile-show">
-                        <h1>Reach Me</h1>
-                        <div class="border-line"></div>
-                    </div>
-                    <div class="cs-item email">
-                        <div class="icon"><i class="fas fa-envelope"></i></div>
-                        <div class="text">
-                            <div class="placeHolder">E-mail</div>
-                            <div class="info">syedarhaan436@gmail.com</div>
-                        </div>
-                    </div>
-                    <div class="cs-item number">
-                        <div class="icon"><i class="fas fa-phone"></i></i></div>
-                        <div class="text">
-                            <div class="placeHolder">Phone</div>
-                            <div class="info">+917780XXXXXX</div>
-                        </div>
-                    </div>
-                    <div class="cs-item address">
-                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
-                        <div class="text">
-                            <div class="placeHolder">Address</div>
-                            <div class="info">Srinagar Jammu & Kashmir</div>
-                        </div>
-                    </div>
-                </div>
-                <section class="contact-form">
-                    <h1>Contact Me</h1>
-                    <div class="border-line"></div>
-                    <div class="contact-submit-after">
-                        <div class="box">
-                            <i class="fa-solid fa-circle-check csa-icon"></i>
-                            <div class="csa-text">Message sent successfully</div>
-                            <div class="csa-ok">OK</div>
-                        </div>
-                    </div>
-                    <form action="https://formsubmit.co/syedarhan436@gmail.com" id="contact-form" class="form-section" method="POST">
-                        <div class="form-group name-section">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <div class="error"><i class="fa-solid fa-circle-xmark error-icon"></i>Please fill out all the
-                            fields
-                        </div>
-                        <div class="email-error"><i class="fa-solid fa-circle-xmark error-icon"></i>Email address is not
-                            valid</div>
-                        <button type="submit" id="contact-submit" class="contact-button">
-                            <div class="contact-load">
-                                <div class="line"></div>
-                                <div class="line"></div>
-                                <div class="line"></div>
-                            </div>
-                            <div class="submit-text">
-                                Submit
-                            </div>
-                        </button>
-                    </form>
-                </section>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="left">
-                &copy; 2024 • Syed Muzamil • All Rights Reserved
-            </div>
-            <div class="right">
-                <div class="social"><a href="https://www.facebook.com/syed.arhaanqadri.7/" target="_blank"><i
-                            class="fa-brands fa-facebook"></i></a></div>
-                <div class="social"><a href="https://www.instagram.com/ar_ha_an_qa_dri/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
-                <div class="social"><a href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
-                <div class="social"><a href="https://github.com/Syedarhaan76" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-            </div>
-        </footer>
-    </div>
-
-
-
+    <!-- Mobile Nav Backdrop -->
     <div class="nav-touch-close" id="nav-tc-js"></div>
 
-    <script type="text/javascript" src="../script/script.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("Email Js API Key (keep it in .env file or seperately)");
-        })();
-    </script>
+    <div class="page">
+      <main class="contact-main">
+        <div class="section-container">
+          <!-- Page Header -->
+          <div class="center-text">
+            <div class="section-header-badge">
+              <i class="fa-solid fa-envelope"></i> Let's Connect
+            </div>
+            <h1 class="section-title">Initiate a Conversation</h1>
+            <p class="section-subtitle">
+              Whether you want to discuss an engineering role, request a project quote, or schedule a technical
+              interview, I am always excited to connect.
+            </p>
+          </div>
 
-</body>
+          <!-- Contact Layout Grid -->
+          <div class="contact-layout-grid">
+            <!-- Left: Contact Details & Availability -->
+            <div class="contact-info-panel">
+              <div>
+                <h2 class="contact-panel-title">Direct Channels</h2>
+                <p class="contact-panel-desc">
+                  Based in Srinagar, J&K, India. Available for worldwide remote engineering roles and
+                  relocation opportunities.
+                </p>
 
+                <div class="contact-items-stack">
+                  <!-- Email -->
+                  <div class="contact-item-box">
+                    <div class="contact-item-icon">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-item-text">
+                      <span class="contact-item-label">Direct Email</span>
+                      <span class="contact-item-val">
+                        <a href="mailto:syedarhaan436@gmail.com">syedarhaan436@gmail.com</a>
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- Phone / WhatsApp -->
+                  <div class="contact-item-box">
+                    <div class="contact-item-icon">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-item-text">
+                      <span class="contact-item-label">Phone & WhatsApp</span>
+                      <span class="contact-item-val">
+                        <a href="tel:+917780889134">+91 7780889134</a>
+                      </span>
+                    </div>
+                  </div>
+
+                  <!-- Location -->
+                  <div class="contact-item-box">
+                    <div class="contact-item-icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="contact-item-text">
+                      <span class="contact-item-label">Location</span>
+                      <span class="contact-item-val">Srinagar, Jammu & Kashmir, India</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Status Card -->
+              <div
+                style="
+                  background: rgba(16,185,129,0.1);
+                  border: 1px solid rgba(16,185,129,0.3);
+                  border-radius: 16px;
+                  padding: 18px;
+                  display: flex;
+                  align-items: center;
+                  gap: 12px;
+                "
+              >
+                <span class="pulse-dot"></span>
+                <span style="font-size: 0.88rem; font-weight: 600; color: #34d399;">
+                  Average Response Time: Under 12 Hours
+                </span>
+              </div>
+            </div>
+
+            <!-- Right: Interactive Contact Form -->
+            <div class="contact-form-panel">
+              <h2
+                style="
+                  font-family: var(--font-display);
+                  font-size: 1.6rem;
+                  font-weight: 800;
+                  color: #fff;
+                  margin-bottom: 8px;
+                "
+              >
+                Send a Direct Message
+              </h2>
+              <p style="font-size: 0.92rem; color: var(--text-muted); margin-bottom: 24px;">
+                Fill out the form below and I will get back to you promptly.
+              </p>
+
+              <div id="form-status" class="form-status-msg"></div>
+
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="form-input-field"
+                    placeholder="e.g. Sarah Jenkins"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input-field"
+                    placeholder="e.g. sarah@company.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Project or Inquiry Details</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-input-field"
+                    placeholder="Tell me about your team, role, or project vision..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn-form-submit">
+                  <i class="fa-solid fa-paper-plane"></i> Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="left">
+          &copy; 2026 <span class="author">Syed Muzamil Qadri</span> • Engineered with passion & precision.
+        </div>
+        <div class="right">
+          <a
+            href="https://github.com/Syedarhaan76"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="GitHub profile"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="LinkedIn profile"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ar_ha_an_qa_dri/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Instagram profile"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/syed.arhaanqadri.7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Facebook profile"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
 </html>

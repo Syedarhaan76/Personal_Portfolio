@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hobbies</title>
-    <link rel="stylesheet" type="text/css" href="../style/style.css" />
-    <link
-      rel="icon"
-      href="/Assets/favicons/favicon.png"
-      type="image/png"
-      sizes="32x32"
+    <title>Hobbies & Personal Interests | Syed Muzamil Qadri</title>
+    <meta
+      name="description"
+      content="Passions, hobbies, and personal pursuits of Syed Muzamil Qadri outside of software engineering."
     />
+    <link rel="icon" href="../../Assets/favicons/fav.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
 
+    <!-- FontAwesome & BoxIcons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -23,139 +23,193 @@
   </head>
 
   <body>
-    <header class="header" id="header">
-      <a href="../../index.html" class="logo"
-        ><span class="main-icon"></span><span>Syed Muzamil</span></a
-      >
+    <!-- Ambient Particles Canvas -->
+    <canvas id="ambient-canvas"></canvas>
 
-      <div class="navbar">
-        <a href="/index.html">Home</a>
-        <a href="./skills.html">skills</a>
-        <a href="./education.html">Education</a>
-        <a href="./career.html">Career</a>
-        <a href="./hobbies.html" class="active">Hobbies</a>
-        <a href="./testimonials.html">Testimonials</a>
-      </div>
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+      <a href="../../index.html" class="logo">
+        <div class="logo-badge">SQ</div>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Syed Muzamil</span>
+          <span class="logo-sub">Software Engineer</span>
+        </div>
+      </a>
+
+      <nav class="navbar">
+        <a href="../../index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="career.html">Career</a>
+        <a href="testimonials.html">Testimonials</a>
+      </nav>
 
       <div class="main">
-        <a href="contact.html" class="user main-items"
-          ><i class="fas fa-envelope cm-icon"></i>Contact Me</a
-        >
-        <div class="main-items menu-icon-container" id="menu-icon-js">
-          <div class="bx bx-menu" id="menu-icon"></div>
+        <a href="contact.html" class="nav-cta-btn">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+        <div class="menu-icon-container" id="menu-icon-js" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
         </div>
       </div>
     </header>
 
+    <!-- Mobile Nav Backdrop -->
+    <div class="nav-touch-close" id="nav-tc-js"></div>
+
     <div class="page">
-      <main class="hobbies-main">
-        <div class="hobbies-section">
-          <div class="hobbies-header">
-            <div class="header-text">My Hobbies</div>
-            <div class="header-line"></div>
-          </div>
-          <div class="section">
-            <div class="row first">
-              <div class="hobbies 1">
-                <div class="image">
-                  <img src="../../Assets/hobbies/Pahalgam.jpg" alt="" />
-                </div>
-                <div class="header">
-                  <div class="header-text">Travelling</div>
-                  <div class="header-line"></div>
-                </div>
-                <div class="text">
-                  Traveling is more than just a pastime for me; it's a way of
-                  life. Exploring new destinations, immersing myself in diverse
-                  cultures, and uncovering the beauty of our world bring me
-                  immense joy and endless opportunities for personal growth.
-                </div>
-              </div>
-              <div class="hobbies 2">
-                <div class="image">
-                  <img src="/Assets/hobbies/swimming.jpg" alt="" />
-                </div>
-                <div class="header">
-                  <div class="header-text">Swimming</div>
-                  <div class="header-line"></div>
-                </div>
-                <div class="text">
-                  Swimming is my ultimate escape. The feeling of gliding through
-                  the water, weightless and free, is truly unparalleled. Whether
-                  it's in the calm waters of a pool or the waves of the open
-                  sea, swimming rejuvenates my body and soul.
-                </div>
-              </div>
+      <main style="padding-top: 140px; padding-bottom: 80px; flex: 1;">
+        <div class="section-container">
+          <!-- Page Header -->
+          <div class="center-text">
+            <div class="section-header-badge">
+              <i class="fa-solid fa-heart"></i> Creative Outlet
             </div>
-            <div class="row second">
-              <div class="hobbies 3">
-                <div class="image">
-                  <img src="../../Assets/hobbies/coding.jpg" alt="" />
-                </div>
-                <div class="header">
-                  <div class="header-text">Coding</div>
-                  <div class="header-line"></div>
-                </div>
-                <div class="text">
-                  Coding as a hobby is a fantastic adventure! It lets you bring
-                  your ideas to life while tackling fun challenges. Each project
-                  completed feels like a mini victory. Plus, sharing your work
-                  and collaborating with others makes it even more enjoyable.
-                  
-                </div>
+            <h1 class="section-title">Hobbies & Personal Pursuits</h1>
+            <p class="section-subtitle">
+              Exploring interests that keep curiosity sharp, foster creative lateral thinking, and provide balance.
+            </p>
+          </div>
+
+          <!-- Hobbies Grid -->
+          <div
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+              gap: 30px;
+              margin-top: 50px;
+            "
+          >
+            <!-- 1. Travelling -->
+            <div class="value-card">
+              <div style="border-radius: 16px; overflow: hidden; margin-bottom: 20px; aspect-ratio: 16/10;">
+                <img
+                  src="../../Assets/hobbies/Pahalgam.jpg"
+                  alt="Traveling In Pahalgam"
+                  style="width: 100%; height: 100%; object-fit: cover;"
+                  loading="lazy"
+                />
               </div>
-              <div class="hobbies 4">
-                <div class="image">
-                  <img src="/Assets/hobbies/photography.jpeg" alt="" />
-                </div>
-                <div class="header">
-                  <div class="header-text">Photography</div>
-                  <div class="header-line"></div>
-                </div>
-                <div class="text">
-                  Photography is my way of capturing the world's fleeting
-                  moments and turning them into lasting memories. With a camera
-                  in hand, I explore the beauty of everyday life, seeking to
-                  frame the world in a unique and captivating way.
-                </div>
+              <h3 class="value-card-title">
+                <i class="fa-solid fa-earth-americas" style="color: var(--cyan-light); margin-right: 8px;"></i>
+                Traveling & Trekking
+              </h3>
+              <p class="value-card-desc">
+                Exploring scenic destinations, experiencing diverse cultures, and immersing myself in the awe-inspiring
+                nature of Kashmir and beyond. Traveling sparks fresh ideas and personal perspective.
+              </p>
+            </div>
+
+            <!-- 2. Swimming -->
+            <div class="value-card">
+              <div style="border-radius: 16px; overflow: hidden; margin-bottom: 20px; aspect-ratio: 16/10;">
+                <img
+                  src="../../Assets/hobbies/swimming.jpg"
+                  alt="Swimming"
+                  style="width: 100%; height: 100%; object-fit: cover;"
+                  loading="lazy"
+                />
               </div>
+              <h3 class="value-card-title">
+                <i class="fa-solid fa-person-swimming" style="color: var(--cyan-light); margin-right: 8px;"></i>
+                Swimming
+              </h3>
+              <p class="value-card-desc">
+                A daily discipline that resets mental focus. Gliding weightlessly through open water builds physical
+                endurance, mindfulness, and clarity.
+              </p>
+            </div>
+
+            <!-- 3. Creative Coding -->
+            <div class="value-card">
+              <div style="border-radius: 16px; overflow: hidden; margin-bottom: 20px; aspect-ratio: 16/10;">
+                <img
+                  src="../../Assets/hobbies/coding.jpg"
+                  alt="Coding Exploration"
+                  style="width: 100%; height: 100%; object-fit: cover;"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="value-card-title">
+                <i class="fa-solid fa-laptop-code" style="color: var(--cyan-light); margin-right: 8px;"></i>
+                Open-Source & Creative Coding
+              </h3>
+              <p class="value-card-desc">
+                Tinkering with generative canvas shaders, micro-libraries, and new frameworks over weekends. Building
+                fun side projects simply for the love of coding.
+              </p>
+            </div>
+
+            <!-- 4. Photography -->
+            <div class="value-card">
+              <div style="border-radius: 16px; overflow: hidden; margin-bottom: 20px; aspect-ratio: 16/10;">
+                <img
+                  src="../../Assets/hobbies/photography.jpeg"
+                  alt="Photography"
+                  style="width: 100%; height: 100%; object-fit: cover;"
+                  loading="lazy"
+                />
+              </div>
+              <h3 class="value-card-title">
+                <i class="fa-solid fa-camera" style="color: var(--cyan-light); margin-right: 8px;"></i>
+                Photography
+              </h3>
+              <p class="value-card-desc">
+                Framing fleeting moments, natural lighting, and architectural symmetry. Photography trains my eye for
+                composition, balance, and visual hierarchy.
+              </p>
             </div>
           </div>
         </div>
       </main>
+
+      <!-- Footer -->
       <footer class="footer">
-        <div class="left">&copy; 2024 •Syed Muzamil • All Rights Reserved</div>
+        <div class="left">
+          &copy; 2026 <span class="author">Syed Muzamil Qadri</span> • Engineered with passion & precision.
+        </div>
         <div class="right">
-          <div class="social">
-            <a
-              href="https://www.facebook.com/syed.arhaanqadri.7/"
-              target="_blank"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </div>
-          <div class="social">
-            <a href="https://www.instagram.com/ar_ha_an_qa_dri/" target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </div>
-          <div class="social">
-            <a
-              href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </div>
-          <div class="social">
-            <a href="https://github.com/Syedarhaan76" target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </div>
+          <a
+            href="https://github.com/Syedarhaan76"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="GitHub profile"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="LinkedIn profile"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ar_ha_an_qa_dri/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Instagram profile"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/syed.arhaanqadri.7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Facebook profile"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
         </div>
       </footer>
     </div>
 
-    <div class="nav-touch-close" id="nav-tc-js"></div>
-
-    <script type="text/javascript" src="../script/script.js"></script>
+    <script src="../script/script.js"></script>
   </body>
 </html>

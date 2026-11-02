@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Featured Projects & Case Studies | Syed Muzamil Qadri</title>
+    <meta
+      name="description"
+      content="Explore production web applications and case studies built by Syed Muzamil Qadri, including Programmers Planet, Elite Guard Insurance Services, and Cine Media."
+    />
+    <link rel="icon" href="../../Assets/favicons/fav.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
+
+    <!-- FontAwesome & BoxIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Ambient Particles Canvas -->
+    <canvas id="ambient-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+      <a href="../../index.html" class="logo">
+        <div class="logo-badge">SQ</div>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Syed Muzamil</span>
+          <span class="logo-sub">Software Engineer</span>
+        </div>
+      </a>
+
+      <nav class="navbar">
+        <a href="../../index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="career.html">Career</a>
+        <a href="testimonials.html">Testimonials</a>
+      </nav>
+
+      <div class="main">
+        <a href="contact.html" class="nav-cta-btn">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+        <div class="menu-icon-container" id="menu-icon-js" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Nav Backdrop -->
+    <div class="nav-touch-close" id="nav-tc-js"></div>
+
+    <div class="page">
+      <main style="padding-top: 140px; padding-bottom: 80px; flex: 1;">
+        <div class="section-container">
+          <!-- Page Header -->
+          <div class="center-text">
+            <div class="section-header-badge">
+              <i class="fa-solid fa-folder-open"></i> Portfolio Showcase
+            </div>
+            <h1 class="section-title">Production Projects & Case Studies</h1>
+            <p class="section-subtitle">
+              A curated collection of full-stack web applications, bespoke client platforms, and high-performance
+              digital products engineered with modern technologies like Next.js 15, TypeScript, and React.
+            </p>
+          </div>
+
+          <!-- Filter Tabs -->
+          <div class="project-filter-tabs">
+            <button class="filter-tab-btn active" data-filter="all">All Projects</button>
+            <button class="filter-tab-btn" data-filter="agency">Agency & SaaS</button>
+            <button class="filter-tab-btn" data-filter="fintech">Commercial & Fintech</button>
+            <button class="filter-tab-btn" data-filter="publishing">Publishing & Media</button>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="projects-grid">
+            <!-- 1. Programmers Planet -->
+            <article class="project-card" data-category="agency all">
+              <div class="project-thumb-wrap">
+                <img
+                  src="../../Assets/projects/programmers-planet.jpg"
+                  alt="Programmers Planet Web Development Agency"
+                  loading="lazy"
+                />
+                <div class="project-badge-overlay">
+                  <span class="featured-pill">Flagship Agency</span>
+                  <span class="live-indicator-pill"><span class="dot"></span> Live in Production</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-category-tag">Software Agency & SaaS Platform</div>
+                <h2 class="project-title">Programmers Planet Platform</h2>
+                <p class="project-description">
+                  A modern, high-converting web agency platform built to showcase professional web development
+                  services, portfolio case studies, transparent pricing, and client consultation.
+                </p>
+
+                <ul class="project-highlights-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> 99 Google Lighthouse Performance & Turbopack builds
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Next.js 15 App Router with React 19 Server Components
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Enterprise database schema and high-converting funnels
+                  </li>
+                </ul>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Next.js 15</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">Framer Motion</span>
+                  <span class="tech-tag">REST APIs</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    href="https://www.programmersplanet.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-project-live"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                  <button
+                    class="btn-project-details"
+                    data-project="programmers-planet"
+                    aria-label="View Programmers Planet case study details"
+                  >
+                    <i class="fa-solid fa-circle-info"></i> Case Study
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2. Elite Guard Insurance Services -->
+            <article class="project-card" data-category="fintech all">
+              <div class="project-thumb-wrap">
+                <img
+                  src="../../Assets/projects/elite-guard.jpg"
+                  alt="Elite Guard Insurance Services Web Application"
+                  loading="lazy"
+                />
+                <div class="project-badge-overlay">
+                  <span class="featured-pill">Fintech / Services</span>
+                  <span class="live-indicator-pill"><span class="dot"></span> Verified Client</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-category-tag">Commercial Insurance Platform</div>
+                <h2 class="project-title">Elite Guard Insurance Services</h2>
+                <p class="project-description">
+                  A modern and responsive insurance services website designed to build trust, showcase insurance
+                  solutions, and provide a smooth digital experience across all devices.
+                </p>
+
+                <ul class="project-highlights-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Interactive Coverage Calculator with dynamic estimates
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Framer Motion micro-interactions creating high trust
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Mobile-first responsive layout with lead capture
+                  </li>
+                </ul>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">Framer Motion</span>
+                  <span class="tech-tag">Fintech</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    href="https://eliteguardinsuranceservices.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-project-live"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                  <button
+                    class="btn-project-details"
+                    data-project="elite-guard"
+                    aria-label="View Elite Guard case study details"
+                  >
+                    <i class="fa-solid fa-circle-info"></i> Case Study
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3. Cine Media Publishing -->
+            <article class="project-card" data-category="publishing all">
+              <div class="project-thumb-wrap">
+                <img
+                  src="../../Assets/projects/cine-media.jpg"
+                  alt="Cine Media Digital Publishing Platform"
+                  loading="lazy"
+                />
+                <div class="project-badge-overlay">
+                  <span class="featured-pill">Digital Media</span>
+                  <span class="live-indicator-pill"><span class="dot"></span> Active Readers</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-category-tag">Digital Publishing & Magazine</div>
+                <h2 class="project-title">Cine Media Platform</h2>
+                <p class="project-description">
+                  A modern blog and digital publishing platform designed for entertainment news, technology
+                  breakdowns, and business stories with an engaging reading experience.
+                </p>
+
+                <ul class="project-highlights-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Sub-second instant client-side article search
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Spotlight stories & trending article modules
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Dark-mode first editorial reading experience
+                  </li>
+                </ul>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">Dynamic SEO</span>
+                  <span class="tech-tag">Dark Mode</span>
+                  <span class="tech-tag">Edge Rendering</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    href="https://www.cine-media.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-project-live"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                  <button
+                    class="btn-project-details"
+                    data-project="cine-media"
+                    aria-label="View Cine Media case study details"
+                  >
+                    <i class="fa-solid fa-circle-info"></i> Case Study
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Bottom Collaboration Box -->
+          <div
+            style="
+              margin-top: 80px;
+              background: var(--bg-card);
+              border: 1px solid var(--border-medium);
+              border-radius: 24px;
+              padding: 45px 30px;
+              text-align: center;
+              backdrop-filter: blur(16px);
+            "
+          >
+            <h3
+              style="
+                font-family: var(--font-display);
+                font-size: 1.8rem;
+                font-weight: 700;
+                color: #fff;
+                margin-bottom: 12px;
+              "
+            >
+              Have a Unique Project Architecture in Mind?
+            </h3>
+            <p
+              style="
+                max-width: 600px;
+                margin: 0 auto 26px;
+                color: var(--text-muted);
+                font-size: 1rem;
+              "
+            >
+              I take projects from initial technical concept through high-scale edge deployment with obsessive attention to
+              code quality, accessibility, and speed.
+            </p>
+            <a href="contact.html" class="btn-primary" style="padding: 13px 32px;">
+              <i class="fa-solid fa-calendar-check"></i> Schedule an Interview / Consultation
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="left">
+          &copy; 2026 <span class="author">Syed Muzamil Qadri</span> • All Rights Reserved.
+        </div>
+        <div class="right">
+          <a
+            href="https://github.com/Syedarhaan76"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="GitHub profile"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="LinkedIn profile"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ar_ha_an_qa_dri/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Instagram profile"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/syed.arhaanqadri.7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Facebook profile"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Case Study Modal -->
+    <div class="project-modal-backdrop" id="project-modal" role="dialog" aria-modal="true">
+      <div class="project-modal-container">
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-img-wrap">
+          <img id="modal-img" src="" alt="Project Preview" />
+        </div>
+
+        <div class="modal-content-area">
+          <div
+            id="modal-category"
+            style="
+              font-family: var(--font-mono);
+              font-size: 0.85rem;
+              color: var(--cyan-light);
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+              font-weight: 600;
+              margin-bottom: 6px;
+            "
+          ></div>
+          <h2
+            id="modal-title"
+            style="
+              font-family: var(--font-display);
+              font-size: 1.8rem;
+              font-weight: 800;
+              color: #fff;
+              margin-bottom: 14px;
+            "
+          ></h2>
+
+          <div
+            id="modal-tags"
+            style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px;"
+          ></div>
+
+          <p
+            id="modal-overview"
+            style="font-size: 1rem; color: #cbd5e1; line-height: 1.7; margin-bottom: 24px;"
+          ></p>
+
+          <h4
+            style="
+              font-family: var(--font-display);
+              font-size: 1.15rem;
+              font-weight: 700;
+              color: #fff;
+              margin-bottom: 12px;
+            "
+          >
+            Performance & Impact Metrics:
+          </h4>
+          <div
+            id="modal-metrics"
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+              gap: 12px;
+              margin-bottom: 26px;
+            "
+          ></div>
+
+          <h4
+            style="
+              font-family: var(--font-display);
+              font-size: 1.15rem;
+              font-weight: 700;
+              color: #fff;
+              margin-bottom: 12px;
+            "
+          >
+            Technical Highlights & Architectural Solutions:
+          </h4>
+          <ul
+            id="modal-architecture"
+            style="list-style: none; padding-left: 0; margin-bottom: 30px;"
+          ></ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a
+              id="modal-live-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+              style="padding: 12px 28px;"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Live Application
+            </a>
+            <a
+              id="modal-case-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-secondary"
+              style="padding: 12px 24px;"
+            >
+              <i class="fa-solid fa-book-open"></i> Full Case Study
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
+</html>

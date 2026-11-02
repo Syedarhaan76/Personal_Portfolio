@@ -1,65 +1,102 @@
-<br>
-<h1 align=center>
-<span> Responsive Portfolio Website </span>
-<img align="center" src="./Assets/favicons/favicon.png" alt="" width="50" height="50">
-</h1>
+# Syed Muzamil Qadri — High-Impact Software Engineer Portfolio
 
-**This is a responsive portfolio website built using HTML, CSS, and JavaScript. It includes multiple pages showcasing various sections such as career information, education details, gallery, hobbies, skills, and testimonials. The contact page is fully functional and uses emailjs to send emails to users upon form submission.**
+An ultra-modern, professional, animated software engineering portfolio designed to instantly impress recruiters, engineering leaders, and hiring managers. Engineered with clean semantic HTML5, modern vanilla CSS3 design tokens, and interactive JavaScript.
 
-## Live Demo
+---
 
-You can view the live demo of this portfolio website on Netlify:
-<br>
-Netlify: [Responsive Portfolio Website](https://ritoncharlox-portfolio-website.netlify.app/)
+## 🌟 Live Features & Highlights
 
-## Pages
+- **Obsessive Performance & 99+ Velocity:** Optimized for sub-second First Contentful Paint (FCP), zero layout shifts, and seamless 60 FPS animations.
+- **Ambient Constellation Canvas:** High-performance particle canvas with mouse attractor/repel dynamics that reacts to user interactions.
+- **Featured Projects & Case Studies Showcase:** Prominently highlights commercial, production-grade applications with interactive modal case study breakdowns, tech stack pills, and live demo buttons.
+- **Interactive Recruiter & Developer Shell (CLI):** Working in-page terminal allowing interviewers to run commands (`skills`, `projects`, `stats`, `hire`, `whoami`) or click quick chips for instant output.
+- **Dynamic Typing Effect:** Powered by Typed.js to highlight core engineering specializations (Next.js 15, React 19, TypeScript, Full-Stack Architecture).
+- **Interactive Card Spotlights:** Dynamic radial gradient highlights that track cursor position across project and skill cards.
+- **Full-Cycle Navigation:** Unified glassmorphism sticky header with mobile responsive drawer and active indicators across all pages.
 
-1. **Home:** Landing page introducing the portfolio.
-2. **Career:** Information about career history and experience.
-3. **Contact:** Functional contact form using emailjs to send emails.
-4. **Education:** Details about educational background and qualifications.
-5. **Gallery:** Gallery showcasing images or projects.
-6. **Hobbies:** Section displaying hobbies and interests.
-7. **Skills:** Information about technical skills and expertise.
-8. **Testimonials:** Testimonials or reviews from clients or colleagues.
+---
 
-## Technologies Used
+## 🚀 Featured Production Projects
 
-### Languages:
+### 1. [Programmers Planet — Software & Web Agency](https://www.programmersplanet.in/)
+- **Category:** Full-Stack Agency & SaaS Platform
+- **Stack:** Next.js 15 App Router, React 19 Server Components, TypeScript, Tailwind CSS, Framer Motion, AI Solutions
+- **Highlights:** 99 Google Lighthouse score, Turbopack builds, enterprise service configurators, and conversion-focused funnels.
+- **Live Demo:** [https://www.programmersplanet.in/](https://www.programmersplanet.in/)
+- **Case Study:** [https://www.programmersplanet.in/projects/programmers-planet-web-agency](https://www.programmersplanet.in/projects/programmers-planet-web-agency)
 
-&emsp; ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-<br>
-&emsp; ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-<br>
-&emsp; ![JavaScript](https://img.shields.io/badge/javascript-yellow.svg?style=for-the-badge&logo=javascript&logoColor=white)
+### 2. [Elite Guard Insurance Services](https://eliteguardinsuranceservices.com/)
+- **Category:** Commercial Fintech & Risk Advisory
+- **Stack:** React, TypeScript, Tailwind CSS, Framer Motion, Interactive Coverage Calculators
+- **Highlights:** Interactive dynamic coverage calculator, multi-step lead capture flows, and verified client endorsement by Syed Mohd Farooq.
+- **Live Demo:** [https://eliteguardinsuranceservices.com/](https://eliteguardinsuranceservices.com/)
+- **Case Study:** [https://www.programmersplanet.in/projects/insurance](https://www.programmersplanet.in/projects/insurance)
 
-### Libraries/Frameworks:
+### 3. [Cine Media Digital Publishing](https://www.cine-media.in/)
+- **Category:** High-Traffic Editorial Publication
+- **Stack:** Next.js, Tailwind CSS, Dark Mode First, Dynamic Category Search, Technical SEO
+- **Highlights:** Sub-second instant client-side article search, spotlight story modules, and reader-focused layout.
+- **Live Demo:** [https://www.cine-media.in/](https://www.cine-media.in/)
+- **Case Study:** [https://www.programmersplanet.in/projects/cine-media](https://www.programmersplanet.in/projects/cine-media)
 
-&emsp; ![EmailJS](https://img.shields.io/badge/email.js-%23563D7C.svg?style=for-the-badge&logo=gmail&logoColor=white)
+---
 
-## Features
+## 📂 Project Structure
 
-- Fully responsive design, ensuring optimal viewing experience across devices.
-- Functional contact form that sends emails to users upon submission.
-- Multiple pages to showcase various aspects of the portfolio.
-
-## Usage
-
-To use this portfolio template for your own portfolio:
-
-1. Clone this repository to your local machine.
-```bash
-git clone https://github.com/ritoncharlox/Responsive-Portfolio-Website.git
 ```
-2. Customize the content of each page to reflect your own career, education, skills, etc.
-3. If you want to use the contact form functionality:
-    - Sign up for an account on EmailJS and obtain your API keys.
-    - Replace the existing emailjs configuration in the JavaScript file with your own API keys.
+syed-muzamil-New-Portfolio/
+├── index.html                   # Flagship Landing Page (Hero, Stats, Featured Projects, CLI Shell)
+├── README.md                    # Project Documentation
+├── LICENSE                      # MIT License
+├── Assets/
+│   ├── main-removebg-preview.png# Professional Profile Portrait
+│   ├── favicons/                # Favicons
+│   ├── projects/                # Project Mockups (programmers-planet.jpg, elite-guard.jpg, cine-media.jpg)
+│   ├── education/               # Campus Imagery
+│   ├── hobbies/                 # Hobbies Imagery
+│   ├── skills/                  # Technology Logos
+│   └── testimonials/           # Client & Colleague Avatars
+└── SRC/
+    ├── pages/
+    │   ├── projects.html        # Dedicated Production Projects & Case Studies
+    │   ├── skills.html          # Technical Stack Matrix & Proficiencies
+    │   ├── education.html       # Academic Degrees & Timeline
+    │   ├── career.html          # Professional Summary & Strategic Milestones
+    │   ├── testimonials.html    # Verified Client & Peer Endorsements
+    │   ├── contact.html         # Direct Contact Channels & Interactive Form
+    │   └── hobbies.html         # Personal Interests & Creative Outlets
+    ├── style/
+    │   └── style.css            # Luxury Dark Glassmorphism Design System
+    └── script/
+        └── script.js            # Particle Canvas, CLI Simulator, Modals, Card Spotlights
+```
 
-## Contributing
+---
 
-Contributions to this project are welcome! If you have any suggestions, improvements, or bug fixes, feel free to fork this repository, make your changes, and submit a pull request.
+## 🛠️ Local Development & Running
 
-## License
+1. Clone or open the repository directory:
+   ```bash
+   git clone https://github.com/Syedarhaan76/Personal_Portfolio.git
+   ```
+2. Start any local HTTP server:
+   - With Python:
+     ```bash
+     python -m http.server 8000
+     ```
+   - Or with Node.js:
+     ```bash
+     npx serve .
+     ```
+3. Open `http://localhost:8000` in your web browser.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
+
+## 📬 Direct Contact & Hiring Inquiries
+
+- **Engineer:** Syed Muzamil Qadri
+- **Role:** Frontend & Full-Stack Software Developer
+- **Email:** [syedarhaan436@gmail.com](mailto:syedarhaan436@gmail.com)
+- **Phone / WhatsApp:** [+91 7780889134](tel:+917780889134)
+- **LinkedIn:** [linkedin.com/in/syed-muzamil-qadri-219386221](https://www.linkedin.com/in/syed-muzamil-qadri-219386221/)
+- **GitHub:** [github.com/Syedarhaan76](https://github.com/Syedarhaan76)

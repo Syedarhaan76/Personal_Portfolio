@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Career</title>
-    <link rel="stylesheet" type="text/css" href="../style/style.css" />
-    <link
-      rel="icon"
-      href="Assets/favicons/favicon.png"
-      type="image/png"
-      sizes="32x32"
+    <title>Career Roadmap & Professional Summary | Syed Muzamil Qadri</title>
+    <meta
+      name="description"
+      content="Career objectives, engineering trajectory, and professional summary of Syed Muzamil Qadri, Frontend & Full-Stack Developer."
     />
+    <link rel="icon" href="../../Assets/favicons/fav.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
 
+    <!-- FontAwesome & BoxIcons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -23,113 +23,216 @@
   </head>
 
   <body>
-    <header class="header" id="header">
-      <a href="../../index.html" class="logo"
-        ><span class="main-icon"></span><span>Syed Muzamil Qadri</span></a
-      >
+    <!-- Ambient Particles Canvas -->
+    <canvas id="ambient-canvas"></canvas>
 
-      <div class="navbar">
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+      <a href="../../index.html" class="logo">
+        <div class="logo-badge">SQ</div>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Syed Muzamil</span>
+          <span class="logo-sub">Software Engineer</span>
+        </div>
+      </a>
+
+      <nav class="navbar">
         <a href="../../index.html">Home</a>
-        <a href="./skills.html">skills</a>
-        <a href="./education.html">Education</a>
-        <a href="./career.html" class="active">Career</a>
-        <a href="./hobbies.html">Hobbies</a>
-        <a href="./testimonials.html">Testimonials</a>
-      </div>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="career.html" class="active">Career</a>
+        <a href="testimonials.html">Testimonials</a>
+      </nav>
 
       <div class="main">
-        <a href="contact.html" class="user main-items"
-          ><i class="fas fa-envelope cm-icon"></i>Contact Me</a
-        >
-        <div class="main-items menu-icon-container" id="menu-icon-js">
-          <div class="bx bx-menu" id="menu-icon"></div>
+        <a href="contact.html" class="nav-cta-btn">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+        <div class="menu-icon-container" id="menu-icon-js" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
         </div>
       </div>
     </header>
 
+    <!-- Mobile Nav Backdrop -->
+    <div class="nav-touch-close" id="nav-tc-js"></div>
+
     <div class="page">
       <main class="career-main">
-        <div class="career-section">
-          <div class="professional-summary">
-            <div class="ps-header career-header">
-              <div class="text">Professional Summary</div>
-              <div class="header-line"></div>
+        <div class="career-wrapper">
+          <!-- Page Header -->
+          <div class="center-text">
+            <div class="section-header-badge">
+              <i class="fa-solid fa-compass"></i> Trajectory & Vision
             </div>
-            <div class="texts">
-              Hi, I’m Syed Muzamil Qadri, a passionate Frontend Developer. I
-              love working with HTML, CSS, and JavaScript to build responsive
-              and user-friendly web applications, always aiming for great user
-              experiences. I also have a basic understanding of C and C++
-              programming languages, which helps me appreciate the underlying
-              logic of development. With a strong eye for design and a
-              commitment to continuous learning, I thrive in collaborative
-              environments to turn innovative ideas into reality.
-            </div>
+            <h1 class="section-title">Career Roadmap & Professional Summary</h1>
+            <p class="section-subtitle">
+              A clear, driven overview of my software engineering focus, technical values, and immediate
+              milestones.
+            </p>
           </div>
-          <div class="career-goals">
-            <div class="cg-header career-header">
-              <div class="text">Career goals</div>
-              <div class="header-line"></div>
+
+          <!-- Professional Summary Card -->
+          <div class="career-summary-card">
+            <h2
+              style="
+                font-family: var(--font-display);
+                font-size: 1.6rem;
+                font-weight: 800;
+                color: #fff;
+                margin-bottom: 16px;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+              "
+            >
+              <i class="fa-solid fa-briefcase" style="color: var(--cyan-light);"></i>
+              Professional Engineering Summary
+            </h2>
+            <p style="margin-bottom: 14px;">
+              I am <strong>Syed Muzamil Qadri</strong>, a results-oriented Frontend & Full-Stack Developer
+              dedicated to creating scalable, responsive, and aesthetically commanding web applications. My
+              technical stack centers around modern <strong>Next.js 15, React 19, TypeScript, and modern CSS/Tailwind</strong>,
+              backed by foundational knowledge in C/C++ systems and Node.js REST API architectures.
+            </p>
+            <p>
+              I thrive in high-velocity agile environments where code performance, accessibility, and user
+              conversion metrics matter. With an obsessive eye for detail and continuous learning habits, I
+              turn ambitious product visions into battle-tested production software that users love and
+              businesses rely upon.
+            </p>
+          </div>
+
+          <!-- Short-Term & Long-Term Goals -->
+          <div class="goals-grid">
+            <!-- Short-Term Goals -->
+            <div class="goal-card">
+              <div class="goal-card-header">
+                <div class="skill-cat-icon">
+                  <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <div>
+                  <h3 class="goal-card-title">Short-Term Milestones</h3>
+                  <div style="font-size: 0.8rem; color: var(--cyan-light); font-family: var(--font-mono);">
+                    Next 12–24 Months
+                  </div>
+                </div>
+              </div>
+
+              <ul class="goal-item-list">
+                <li class="goal-item">
+                  <span class="goal-check-icon"><i class="fa-solid fa-check"></i></span>
+                  <div>
+                    <strong>Join a High-Impact Engineering Team:</strong> Contribute directly to core production
+                    codebases in a forward-thinking tech company or high-growth startup.
+                  </div>
+                </li>
+                <li class="goal-item">
+                  <span class="goal-check-icon"><i class="fa-solid fa-check"></i></span>
+                  <div>
+                    <strong>Master Next-Gen Web Capabilities:</strong> Deepen expertise in React Server Actions,
+                    AI-driven vector search interfaces, and edge caching microservices.
+                  </div>
+                </li>
+                <li class="goal-item">
+                  <span class="goal-check-icon"><i class="fa-solid fa-check"></i></span>
+                  <div>
+                    <strong>Scale Commercial Web Platforms:</strong> Continue shipping enterprise products with
+                    99+ Google Lighthouse velocity and sub-second latency.
+                  </div>
+                </li>
+              </ul>
             </div>
-            <div class="goals">
-              <div class="goals-row short-term-goals">
-                <div class="goals-header">
-                  <div class="text">Short-Term Goals</div>
-                  <div class="header-line"></div>
+
+            <!-- Long-Term Goals -->
+            <div class="goal-card">
+              <div class="goal-card-header">
+                <div class="skill-cat-icon">
+                  <i class="fa-solid fa-mountain"></i>
                 </div>
-                <div class="texts">
-                  <div class="text-row">
-                    <div class="tr-icon"></div>
-                    Develop technical skills in web development.
-                  </div>
-                  <div class="text-row">
-                    <div class="tr-icon"></div>
-                    Gain practical experience through collaboration.
-                  </div>
-                  <div class="text-row">
-                    <div class="tr-icon"></div>
-                    Build a strong portfolio.
+                <div>
+                  <h3 class="goal-card-title">Long-Term Vision</h3>
+                  <div style="font-size: 0.8rem; color: var(--violet-light); font-family: var(--font-mono);">
+                    3–5 Year Horizon
                   </div>
                 </div>
               </div>
-              <div class="goals-row long-term-goals">
-                <div class="goals-header">
-                  <div class="text">Long-Term Goals</div>
-                  <div class="header-line"></div>
-                </div>
-                <div class="texts">
-                  <div class="text-row">
-                    <div class="tr-icon"></div>
-                    Establish a web development agency.
+
+              <ul class="goal-item-list">
+                <li class="goal-item">
+                  <span class="goal-check-icon"><i class="fa-solid fa-check"></i></span>
+                  <div>
+                    <strong>Staff / Lead Engineering Roles:</strong> Mentor junior engineers, drive architectural
+                    standards, and establish design systems that power multiple products.
                   </div>
-                  <div class="text-row">
-                    <div class="tr-icon"></div>
-                    Lead a team of creative professionals.
+                </li>
+                <li class="goal-item">
+                  <span class="goal-check-icon"><i class="fa-solid fa-check"></i></span>
+                  <div>
+                    <strong>Full-Cycle Digital Agency Leadership:</strong> Scale Programmers Planet into an
+                    industry-recognized digital engineering firm serving global visionary brands.
                   </div>
-                  <div class="text-row">
-                    <div class="tr-icon"></div>
-                    Contribute to business growth through online solutions.
+                </li>
+                <li class="goal-item">
+                  <span class="goal-check-icon"><i class="fa-solid fa-check"></i></span>
+                  <div>
+                    <strong>Open Source & Community Contribution:</strong> Release reusable UI libraries,
+                    developer tooling, and performance optimization guides to empower the developer community.
                   </div>
-                </div>
-              </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </main>
+
+      <!-- Footer -->
       <footer class="footer">
-        <div class="left">&copy; 2024 • Syed Muzamil • All Rights Reserved</div>
+        <div class="left">
+          &copy; 2026 <span class="author">Syed Muzamil Qadri</span> • Engineered with passion & precision.
+        </div>
         <div class="right">
-          <div class="social"><a href="https://www.facebook.com/syed.arhaanqadri.7/" target="_blank"><i
-                      class="fa-brands fa-facebook"></i></a></div>
-          <div class="social"><a href="https://www.instagram.com/ar_ha_an_qa_dri/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
-          <div class="social"><a href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
-          <div class="social"><a href="https://github.com/Syedarhaan76" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-      </div>
+          <a
+            href="https://github.com/Syedarhaan76"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="GitHub profile"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="LinkedIn profile"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ar_ha_an_qa_dri/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Instagram profile"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/syed.arhaanqadri.7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Facebook profile"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
       </footer>
     </div>
 
-    <div class="nav-touch-close" id="nav-tc-js"></div>
-
-    <script type="text/javascript" src="../script/script.js"></script>
+    <script src="../script/script.js"></script>
   </body>
 </html>

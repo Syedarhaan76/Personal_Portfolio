@@ -1,20 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>SYED MUZAMIL QADRI</title>
-    <link rel="stylesheet" type="text/css" href="SRC/style/style.css" />
-    <link
-      rel="icon"
-      href="./Assets/favicons/fav.png"
-      type="image/png"
-      sizes="32x32"
+    <title>Syed Muzamil Qadri | Frontend & Full-Stack Software Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Syed Muzamil Qadri - High-performance Frontend & Full-Stack Developer specializing in Next.js 15, React, TypeScript, and modern scalable web applications."
     />
+    <link rel="icon" href="./Assets/favicons/fav.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" type="text/css" href="SRC/style/style.css" />
 
+    <!-- FontAwesome & BoxIcons -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link
       rel="stylesheet"
@@ -23,114 +23,800 @@
   </head>
 
   <body>
-    <header class="header" id="header">
-      <a href="index.html" class="logo"
-        ><span class="main-icon"></span><span>Syed Muzamil Qadri</span></a
-      >
+    <!-- Ambient Particle Constellation Canvas -->
+    <canvas id="ambient-canvas"></canvas>
 
-      <div class="navbar">
+    <!-- Navigation Header -->
+    <header class="header" id="header">
+      <a href="index.html" class="logo">
+        <div class="logo-badge">SQ</div>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Syed Muzamil</span>
+          <span class="logo-sub">Software Engineer</span>
+        </div>
+      </a>
+
+      <nav class="navbar">
         <a href="index.html" class="active">Home</a>
+        <a href="SRC/pages/projects.html">Projects</a>
         <a href="SRC/pages/skills.html">Skills</a>
         <a href="SRC/pages/education.html">Education</a>
         <a href="SRC/pages/career.html">Career</a>
-        <a href="SRC/pages/hobbies.html">Hobbies</a>
         <a href="SRC/pages/testimonials.html">Testimonials</a>
-      </div>
+      </nav>
 
       <div class="main">
-        <a href="SRC/pages/contact.html" class="user main-items"
-          ><i class="fas fa-envelope cm-icon"></i>Contact Me</a
-        >
-        <div class="main-items menu-icon-container" id="menu-icon-js">
-          <div class="bx bx-menu" id="menu-icon"></div>
+        <a href="SRC/pages/contact.html" class="nav-cta-btn">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+        <div class="menu-icon-container" id="menu-icon-js" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
         </div>
       </div>
     </header>
 
+    <!-- Mobile Nav Backdrop -->
+    <div class="nav-touch-close" id="nav-tc-js"></div>
+
     <div class="page">
+      <!-- HERO / ABOUT SECTION -->
       <section class="about" id="about">
         <div class="about-content">
-          <div class="column right">
-            <img src="Assets/main-removebg-preview.png" alt="" />
-          </div>
+          <!-- Left Column: Pitch & Identity -->
           <div class="column left">
-            <div class="text">
-              <h3>Hi I'm Syed Muzamil Qadri</h3> 
-              <h4> and I'm a <span id="typed" class="iAm"></span></h4>
+            <div class="availability-pill">
+              <span class="pulse-dot"></span>
+              <span>Available for Hire & High-Impact Roles</span>
             </div>
-            <p>
-              A passionate Frontend Developer. I love working with HTML, CSS,
-              and JavaScript to build responsive and user-friendly web
-              applications, always aiming for great user experiences. I also
-              have a basic understanding of C and C++ programming languages,
-              which helps me appreciate the underlying logic of development.
-              With a strong eye for design and a commitment to continuous
-              learning, I thrive in collaborative environments to turn
-              innovative ideas into reality.
+
+            <h1 class="hero-headline">
+              Hi, I'm <span class="gradient-name">Syed Muzamil Qadri</span>
+            </h1>
+
+            <div class="hero-role-line">
+              <span>and I'm a</span>
+              <span id="typed" class="iAm"></span>
+            </div>
+
+            <p class="hero-bio">
+              A results-driven <strong>Frontend & Full-Stack Developer</strong> obsessed with craft,
+              performance, and delightful user experiences. Specializing in modern web applications
+              engineered with <strong>Next.js 15, React 19, TypeScript</strong>, and scalable backend
+              systems. Proven track record delivering <strong>99+ Google Lighthouse velocity</strong>,
+              responsive enterprise platforms, and client-converting software.
             </p>
 
-            <div class="info-box">
-              <div class="email-info">
-                <h5>Email:</h5>
-                <span>syedarhaan436@gmail.com</span>
-              </div>
-
-              <div class="contact-info">
-                <h5>Contact:</h5>
-                <span>+917780889134</span>
-              </div>
+            <!-- Tech Stack Pills -->
+            <div class="hero-stack-pills">
+              <span class="stack-pill"><i class="fa-brands fa-react"></i> Next.js 15 / React</span>
+              <span class="stack-pill"><i class="fa-solid fa-code"></i> TypeScript</span>
+              <span class="stack-pill"><i class="fa-brands fa-node-js"></i> Node.js & APIs</span>
+              <span class="stack-pill"><i class="fa-brands fa-css3-alt"></i> Tailwind CSS</span>
+              <span class="stack-pill"><i class="fa-solid fa-wand-magic-sparkles"></i> Framer Motion</span>
+              <span class="stack-pill"><i class="fa-solid fa-microchip"></i> C / C++ Systems</span>
             </div>
 
+            <!-- Action Buttons -->
             <div class="buttons">
-              <a href="./SRC/Updated Resume.pdf" target="_blank">Download CV</a>
-              <a href="./SRC/pages/contact.html" class="cm-button"
-                >Contact Me</a
-              >
+              <a href="#featured-projects" class="btn-primary">
+                <i class="fa-solid fa-arrow-down"></i> Explore Projects
+              </a>
+              <a href="./SRC/Updated Resume.pdf" target="_blank" class="btn-secondary">
+                <i class="fa-solid fa-download"></i> Download CV
+              </a>
+              <a href="./SRC/pages/contact.html" class="btn-secondary">
+                <i class="fa-solid fa-envelope"></i> Let's Talk
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Profile Image with Floating Badges -->
+          <div class="column right">
+            <div class="hero-avatar-wrapper">
+              <div class="hero-avatar-glow"></div>
+              <div class="hero-avatar-frame">
+                <img
+                  src="Assets/main-removebg-preview.png"
+                  alt="Syed Muzamil Qadri - Software Engineer"
+                />
+              </div>
+
+              <!-- Floating Micro Badges -->
+              <div class="floating-badge badge-top-left">
+                <div class="badge-icon speed">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="badge-text">
+                  <span class="badge-title">99+ Velocity</span>
+                  <span class="badge-sub">Lighthouse Score</span>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom-right">
+                <div class="badge-icon code">
+                  <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div class="badge-text">
+                  <span class="badge-title">Full-Stack Craft</span>
+                  <span class="badge-sub">Next.js & TypeScript</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- METRICS & ACHIEVEMENTS STRIP -->
+      <section class="metrics-strip">
+        <div class="section-container">
+          <div class="metrics-grid">
+            <div class="metric-item">
+              <div class="metric-num" data-target="15" data-suffix="+">15+</div>
+              <div class="metric-label">Web Apps Shipped</div>
+              <div class="metric-desc">Production & Commercial Grade</div>
+            </div>
+
+            <div class="metric-item">
+              <div class="metric-num" data-target="99" data-suffix="+">99+</div>
+              <div class="metric-label">Lighthouse Performance</div>
+              <div class="metric-desc">Sub-second First Contentful Paint</div>
+            </div>
+
+            <div class="metric-item">
+              <div class="metric-num" data-target="100" data-suffix="%">100%</div>
+              <div class="metric-label">Client Satisfaction</div>
+              <div class="metric-desc">On-time milestone delivery</div>
+            </div>
+
+            <div class="metric-item">
+              <div class="metric-num" data-target="3" data-suffix="+">3+</div>
+              <div class="metric-label">Years of Rigorous Dev</div>
+              <div class="metric-desc">Continuous Engineering Growth</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED PROJECTS SHOWCASE (THE CORE RECRUITER SECTION) -->
+      <section class="projects-section-wrap" id="featured-projects">
+        <div class="section-container">
+          <div class="center-text">
+            <div class="section-header-badge">
+              <i class="fa-solid fa-rocket"></i> Production Showcase
+            </div>
+            <h2 class="section-title">Engineered For Performance & Impact</h2>
+            <p class="section-subtitle">
+              Real-world digital products built for visionary founders and enterprises, featuring live
+              deployments and rigorous architectural standards.
+            </p>
+          </div>
+
+          <!-- Project Category Tabs -->
+          <div class="project-filter-tabs">
+            <button class="filter-tab-btn active" data-filter="all">All Projects</button>
+            <button class="filter-tab-btn" data-filter="agency">Agency & SaaS</button>
+            <button class="filter-tab-btn" data-filter="fintech">Commercial & Fintech</button>
+            <button class="filter-tab-btn" data-filter="publishing">Publishing & Media</button>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="projects-grid">
+            <!-- Project 1: Programmers Planet -->
+            <article class="project-card" data-category="agency all">
+              <div class="project-thumb-wrap">
+                <img
+                  src="Assets/projects/programmers-planet.jpg"
+                  alt="Programmers Planet Web Development Agency"
+                  loading="lazy"
+                />
+                <div class="project-badge-overlay">
+                  <span class="featured-pill">Flagship Agency</span>
+                  <span class="live-indicator-pill"><span class="dot"></span> Live in Production</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-category-tag">Software Agency & SaaS Platform</div>
+                <h3 class="project-title">Programmers Planet Platform</h3>
+                <p class="project-description">
+                  A modern, high-converting agency platform engineered to showcase bespoke web
+                  applications, SaaS architecture, transparent pricing packages, and client onboarding.
+                </p>
+
+                <ul class="project-highlights-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> 99 Google Lighthouse Performance & Turbopack builds
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Next.js 15 App Router with React 19 Server Components
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Tokenized modern dark UI with conversion-focused funnels
+                  </li>
+                </ul>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Next.js 15</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">Framer Motion</span>
+                  <span class="tech-tag">REST APIs</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    href="https://www.programmersplanet.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-project-live"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                  <button
+                    class="btn-project-details"
+                    data-project="programmers-planet"
+                    aria-label="View Programmers Planet case study details"
+                  >
+                    <i class="fa-solid fa-circle-info"></i> Case Study
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: Elite Guard Insurance Services -->
+            <article class="project-card" data-category="fintech all">
+              <div class="project-thumb-wrap">
+                <img
+                  src="Assets/projects/elite-guard.jpg"
+                  alt="Elite Guard Insurance Services Web Application"
+                  loading="lazy"
+                />
+                <div class="project-badge-overlay">
+                  <span class="featured-pill">Fintech / Services</span>
+                  <span class="live-indicator-pill"><span class="dot"></span> Verified Client</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-category-tag">Commercial Insurance Platform</div>
+                <h3 class="project-title">Elite Guard Insurance Services</h3>
+                <p class="project-description">
+                  A trustworthy, responsive business platform designed to showcase comprehensive insurance
+                  solutions, featuring interactive coverage calculators and streamlined quote inquiry flows.
+                </p>
+
+                <ul class="project-highlights-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Interactive Coverage Calculator with dynamic premium estimates
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Framer Motion micro-interactions creating high enterprise trust
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Multi-device responsive grid optimized for desktop & mobile
+                  </li>
+                </ul>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">Framer Motion</span>
+                  <span class="tech-tag">Calculators</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    href="https://eliteguardinsuranceservices.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-project-live"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                  <button
+                    class="btn-project-details"
+                    data-project="elite-guard"
+                    aria-label="View Elite Guard case study details"
+                  >
+                    <i class="fa-solid fa-circle-info"></i> Case Study
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Cine Media Publishing -->
+            <article class="project-card" data-category="publishing all">
+              <div class="project-thumb-wrap">
+                <img
+                  src="Assets/projects/cine-media.jpg"
+                  alt="Cine Media Digital Publishing Platform"
+                  loading="lazy"
+                />
+                <div class="project-badge-overlay">
+                  <span class="featured-pill">Digital Media</span>
+                  <span class="live-indicator-pill"><span class="dot"></span> Active Readers</span>
+                </div>
+              </div>
+
+              <div class="project-body">
+                <div class="project-category-tag">Digital Publishing & Magazine</div>
+                <h3 class="project-title">Cine Media Platform</h3>
+                <p class="project-description">
+                  An editorial blog and digital publishing platform built for entertainment news, tech
+                  analysis, and community stories with lightning-fast article transitions and dark mode.
+                </p>
+
+                <ul class="project-highlights-list">
+                  <li>
+                    <i class="fa-solid fa-check"></i> Sub-second instant client-side article search & filtering
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Spotlight stories & trending article recommendation modules
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> Dark-mode first editorial reading experience with responsive images
+                  </li>
+                </ul>
+
+                <div class="project-tech-tags">
+                  <span class="tech-tag">Next.js</span>
+                  <span class="tech-tag">Tailwind CSS</span>
+                  <span class="tech-tag">Dynamic SEO</span>
+                  <span class="tech-tag">Dark Mode</span>
+                  <span class="tech-tag">Edge Rendering</span>
+                </div>
+
+                <div class="project-actions">
+                  <a
+                    href="https://www.cine-media.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-project-live"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                  <button
+                    class="btn-project-details"
+                    data-project="cine-media"
+                    aria-label="View Cine Media case study details"
+                  >
+                    <i class="fa-solid fa-circle-info"></i> Case Study
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Link to dedicated Projects Page -->
+          <div style="text-align: center; margin-top: 50px;">
+            <a href="SRC/pages/projects.html" class="btn-secondary" style="padding: 14px 36px;">
+              <span>View Full Case Studies & Architecture Breakdown</span>
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERACTIVE RECRUITER & DEVELOPER TERMINAL -->
+      <section class="terminal-section">
+        <div class="section-container">
+          <div class="center-text">
+            <div class="section-header-badge">
+              <i class="fa-solid fa-terminal"></i> Interactive Shell
+            </div>
+            <h2 class="section-title">Developer & Recruiter CLI</h2>
+            <p class="section-subtitle">
+              Prefer testing skills through a terminal? Run commands or click quick chips below to inspect
+              technical proficiencies, velocity metrics, or hire details.
+            </p>
+          </div>
+
+          <div class="terminal-wrapper" style="margin-top: 40px;">
+            <div class="terminal-header">
+              <div class="terminal-controls">
+                <span class="t-dot red"></span>
+                <span class="t-dot yellow"></span>
+                <span class="t-dot green"></span>
+              </div>
+              <div class="terminal-title">
+                <i class="fa-solid fa-code-branch"></i> muzamil@portfolio: ~ (zsh)
+              </div>
+              <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--emerald-primary);">
+                ● Connected
+              </div>
+            </div>
+
+            <div class="terminal-body">
+              <div class="terminal-welcome">
+                Welcome to Syed Muzamil Qadri's interactive engineering console.<br />
+                Type <strong style="color: #fff">help</strong> or click one of the quick chips below:
+              </div>
+
+              <!-- Quick Command Chips -->
+              <div class="terminal-chips-row">
+                <button class="terminal-chip" data-cmd="whoami">whoami</button>
+                <button class="terminal-chip" data-cmd="skills">skills</button>
+                <button class="terminal-chip" data-cmd="projects">projects</button>
+                <button class="terminal-chip" data-cmd="stats">stats</button>
+                <button class="terminal-chip" data-cmd="hire">hire</button>
+                <button class="terminal-chip" data-cmd="contact">contact</button>
+                <button class="terminal-chip" data-cmd="clear">clear</button>
+              </div>
+
+              <div class="terminal-history" id="terminal-history"></div>
+
+              <div class="terminal-input-row">
+                <span class="terminal-prompt">visitor@portfolio:~$</span>
+                <input
+                  type="text"
+                  id="terminal-input"
+                  class="terminal-input"
+                  placeholder="type command (e.g. 'hire' or 'skills') and press enter..."
+                  autocomplete="off"
+                  spellcheck="false"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- "WHY HIRE SYED" RECRUITER VALUE PROPOSITION -->
+      <section class="why-hire-section">
+        <div class="section-container">
+          <div class="center-text">
+            <div class="section-header-badge">
+              <i class="fa-solid fa-award"></i> The Engineering Standard
+            </div>
+            <h2 class="section-title">Why Top Teams Choose To Hire Me</h2>
+            <p class="section-subtitle">
+              I bridge the gap between pixel-perfect aesthetics and rock-solid software architecture.
+              Here is what I bring to your engineering squad on day one:
+            </p>
+          </div>
+
+          <div class="value-grid">
+            <div class="value-card">
+              <div class="value-icon-box">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+              <h3 class="value-card-title">Obsessive Velocity</h3>
+              <p class="value-card-desc">
+                Every frontend component is benchmarked for 95+ Lighthouse scores, instantaneous First
+                Contentful Paint, and zero layout shifts for flawless user satisfaction.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-box">
+                <i class="fa-solid fa-cubes"></i>
+              </div>
+              <h3 class="value-card-title">Enterprise Clean Code</h3>
+              <p class="value-card-desc">
+                Type-safe TypeScript, modular component boundaries, and strict linting. Your codebase
+                remains readable, extensible, and a joy for the team to scale.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-box">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h3 class="value-card-title">Business & Conversion Focus</h3>
+              <p class="value-card-desc">
+                Great software drives revenue. I design frictionless interfaces, automated technical SEO,
+                and intuitive funnels that turn visitors into loyal paying customers.
+              </p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-box">
+                <i class="fa-solid fa-handshake-angle"></i>
+              </div>
+              <h3 class="value-card-title">Agile & Reliable Delivery</h3>
+              <p class="value-card-desc">
+                Transparent milestone reporting, autonomous problem solving, and zero hand-holding
+                required. Dependable partner who meets deadlines consistently.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS SPOTLIGHT -->
+      <section style="padding: 70px 0;">
+        <div class="section-container">
+          <div class="center-text">
+            <div class="section-header-badge">
+              <i class="fa-solid fa-comment-dots"></i> Client Endorsements
+            </div>
+            <h2 class="section-title">What Founders & Advisors Say</h2>
+          </div>
+
+          <div class="testimonials-grid" style="margin-top: 35px;">
+            <div class="testimonial-card">
+              <div>
+                <div class="test-stars-row">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-quote">
+                  "Syed did an outstanding job bringing our vision for Elite Guard Insurance Services to life.
+                  He understood our requirements, created an exceptionally modern, responsive website, and
+                  his technical execution was smooth and hassle-free. Highly recommended!"
+                </p>
+              </div>
+
+              <div class="test-client-profile">
+                <img
+                  src="Assets/testimonials/1.jpg"
+                  alt="Syed Mohd Farooq"
+                  class="test-avatar"
+                />
+                <div class="test-client-info">
+                  <span class="test-client-name">Syed Mohd Farooq</span>
+                  <span class="test-client-role">Insurance Advisor, Elite Guard</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div>
+                <div class="test-stars-row">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="test-quote">
+                  "Working with Syed Muzamil is such a joy! He is an amazing developer whose creativity and
+                  technical precision shine through in every sprint. He consistently delivers beyond
+                  expectations with immaculate UI polish."
+                </p>
+              </div>
+
+              <div class="test-client-profile">
+                <img
+                  src="Assets/testimonials/3.jpg"
+                  alt="Suzain"
+                  class="test-avatar"
+                />
+                <div class="test-client-info">
+                  <span class="test-client-name">Suzain</span>
+                  <span class="test-client-role">Engineering Colleague, Canada</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CALL TO ACTION STRIP -->
+      <section style="padding: 60px 0 90px;">
+        <div class="section-container">
+          <div
+            style="
+              background: linear-gradient(135deg, rgba(6,182,212,0.15), rgba(139,92,246,0.15));
+              border: 1px solid var(--border-medium);
+              border-radius: 28px;
+              padding: 50px 30px;
+              text-align: center;
+              backdrop-filter: blur(16px);
+              box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            "
+          >
+            <h2
+              style="
+                font-family: var(--font-display);
+                font-size: clamp(2rem, 3.5vw, 2.8rem);
+                font-weight: 800;
+                color: #fff;
+                margin-bottom: 14px;
+              "
+            >
+              Ready To Build Something Exceptional?
+            </h2>
+            <p
+              style="
+                max-width: 600px;
+                margin: 0 auto 30px;
+                color: #cbd5e1;
+                font-size: 1.05rem;
+                line-height: 1.7;
+              "
+            >
+              Whether you're looking for a dedicated full-time frontend/full-stack engineer or need to
+              launch a cutting-edge web platform, let's connect and discuss your requirements.
+            </p>
+            <div class="buttons" style="justify-content: center;">
+              <a href="SRC/pages/contact.html" class="btn-primary" style="padding: 15px 36px;">
+                <i class="fa-solid fa-paper-plane"></i> Get in Touch
+              </a>
+              <a href="./SRC/Updated Resume.pdf" target="_blank" class="btn-secondary" style="padding: 15px 32px;">
+                <i class="fa-solid fa-file-pdf"></i> View Official Resume
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
       <footer class="footer">
-        <div class="left">&copy; 2024 •Syed Muzamil • All Rights Reserved</div>
+        <div class="left">
+          &copy; 2026 <span class="author">Syed Muzamil Qadri</span> • Engineered with passion, precision &
+          clean code.
+        </div>
         <div class="right">
-          <div class="social">
-            <a
-              href="https://www.facebook.com/syed.arhaanqadri.7/"
-              target="_blank"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-          </div>
-          <div class="social">
-            <a href="https://www.instagram.com/ar_ha_an_qa_dri/" target="_blank"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-          </div>
-          <div class="social">
-            <a
-              href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/"
-              target="_blank"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-          </div>
-          <div class="social">
-            <a href="https://github.com/Syedarhaan76" target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </div>
+          <a
+            href="https://github.com/Syedarhaan76"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="GitHub profile"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="LinkedIn profile"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ar_ha_an_qa_dri/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Instagram profile"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/syed.arhaanqadri.7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Facebook profile"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
         </div>
       </footer>
     </div>
 
-    <div class="nav-touch-close" id="nav-tc-js"></div>
+    <!-- INTERACTIVE PROJECT DETAILS MODAL -->
+    <div class="project-modal-backdrop" id="project-modal" role="dialog" aria-modal="true">
+      <div class="project-modal-container">
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
 
-    <script type="text/javascript" src="SRC/script/script.js"></script>
+        <div class="modal-img-wrap">
+          <img id="modal-img" src="" alt="Project Preview" />
+        </div>
 
+        <div class="modal-content-area">
+          <div
+            id="modal-category"
+            style="
+              font-family: var(--font-mono);
+              font-size: 0.85rem;
+              color: var(--cyan-light);
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+              font-weight: 600;
+              margin-bottom: 6px;
+            "
+          ></div>
+          <h2
+            id="modal-title"
+            style="
+              font-family: var(--font-display);
+              font-size: 1.8rem;
+              font-weight: 800;
+              color: #fff;
+              margin-bottom: 14px;
+            "
+          ></h2>
+
+          <div
+            id="modal-tags"
+            style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 22px;"
+          ></div>
+
+          <p
+            id="modal-overview"
+            style="font-size: 1rem; color: #cbd5e1; line-height: 1.7; margin-bottom: 24px;"
+          ></p>
+
+          <h4
+            style="
+              font-family: var(--font-display);
+              font-size: 1.15rem;
+              font-weight: 700;
+              color: #fff;
+              margin-bottom: 12px;
+            "
+          >
+            Performance & Impact Metrics:
+          </h4>
+          <div
+            id="modal-metrics"
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+              gap: 12px;
+              margin-bottom: 26px;
+            "
+          ></div>
+
+          <h4
+            style="
+              font-family: var(--font-display);
+              font-size: 1.15rem;
+              font-weight: 700;
+              color: #fff;
+              margin-bottom: 12px;
+            "
+          >
+            Technical Highlights & Architectural Solutions:
+          </h4>
+          <ul
+            id="modal-architecture"
+            style="list-style: none; padding-left: 0; margin-bottom: 30px;"
+          ></ul>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a
+              id="modal-live-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-primary"
+              style="padding: 12px 28px;"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit Live Application
+            </a>
+            <a
+              id="modal-case-link"
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-secondary"
+              style="padding: 12px 24px;"
+            >
+              <i class="fa-solid fa-book-open"></i> Full Case Study
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Scripts -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="SRC/script/script.js"></script>
     <script>
-      var typed = new Typed("#typed", {
-        strings: ["Frontend Developer", "C/C++ Developer", "Web Designer","Software Developer"],
-        typeSpeed: 75,
+      // Initialize Typed.js on hero
+      new Typed("#typed", {
+        strings: [
+          "Frontend Engineer",
+          "Next.js & React Specialist",
+          "Full-Stack Web Developer",
+          "Modern UI/UX Crafter",
+          "Software Craftsman"
+        ],
+        typeSpeed: 60,
+        backSpeed: 35,
+        backDelay: 1800,
+        loop: true,
       });
     </script>
   </body>

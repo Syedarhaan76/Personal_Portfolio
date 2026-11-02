@@ -1,173 +1,413 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Technical Skills & Engineering Stack | Syed Muzamil Qadri</title>
+    <meta
+      name="description"
+      content="Comprehensive overview of technical proficiencies, frontend frameworks, backend technologies, and development tools mastered by Syed Muzamil Qadri."
+    />
+    <link rel="icon" href="../../Assets/favicons/fav.png" type="image/png" sizes="32x32" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Skills</title>
-    <link rel="stylesheet" type="text/css" href="../style/style.css">
-    <link rel="icon" href="/Assets/favicons/favicon.png" type="image/png" sizes="32x32">
+    <!-- FontAwesome & BoxIcons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-</head>
+  <body>
+    <!-- Ambient Particles Canvas -->
+    <canvas id="ambient-canvas"></canvas>
 
-<body>
-
-
+    <!-- Header Navigation -->
     <header class="header" id="header">
-        <a href="../../index.html" class="logo"><span class="main-icon"></span><span>Syed Muzamil Qadri</span></a>
-
-        <div class="navbar">
-            <a href="../../index.html" >Home</a>
-            <a href="../pages/skills.html"class="active">Skills</a>
-            <a href="../pages/education.html">Education</a>
-            <a href="../pages/career.html">Career</a>
-            <a href="../pages/hobbies.html">Hobbies</a>
-            <a href="../pages/testimonials.html">Testimonials</a>
+      <a href="../../index.html" class="logo">
+        <div class="logo-badge">SQ</div>
+        <div class="logo-text-wrap">
+          <span class="logo-name">Syed Muzamil</span>
+          <span class="logo-sub">Software Engineer</span>
         </div>
+      </a>
 
-        <div class="main">
-            <a href="contact.html" class="user main-items"><i class="fas fa-envelope cm-icon"></i>Contact Me</a>
-            <div class="main-items menu-icon-container" id="menu-icon-js">
-                <div class="bx bx-menu" id="menu-icon"></div>
-            </div>
+      <nav class="navbar">
+        <a href="../../index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="skills.html" class="active">Skills</a>
+        <a href="education.html">Education</a>
+        <a href="career.html">Career</a>
+        <a href="testimonials.html">Testimonials</a>
+      </nav>
+
+      <div class="main">
+        <a href="contact.html" class="nav-cta-btn">
+          <i class="fa-solid fa-paper-plane"></i> Contact Me
+        </a>
+        <div class="menu-icon-container" id="menu-icon-js" aria-label="Toggle navigation menu">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
         </div>
+      </div>
     </header>
 
-    <div class="page">
-        <main class="skills-main">
-            <div class="skills-section">
-                <div class="header">
-                    <div class="text">My Skills</div>
-                    <div class="border-line"></div>
-                </div>
-                <div class="skills">
-                    <div class="technical-skills skills-group-row">
-                        <div class="skills-group-header">Technical Skills</div>
-                        <div class="border-line"></div>
-                        <div class="skills-group">
-                            <div class="html skill">
-                                <div class="icon"><i class="fa-brands fa-html5 icon-img"></i></div>
-                                <div class="skill-block">
-                                    <div class="block-header">HTML</div>
-                                    <div class="block-section"> Forms, Semantic Markup, Structures</div>
-                                    <div class="progress-block">70%</div>
-                                    <div class="progress-bar">
-                                        <div class="progress-per"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="css skill">
-                                <div class="icon"><i class="fa-brands fa-css3-alt icon-img"></i></div>
-                                <div class="skill-block">
-                                    <div class="block-header">CSS</div>
-                                    <div class="block-section">Layout Design, Animations</div>
-                                    <div class="progress-block">60%</div>
-                                    <div class="progress-bar">
-                                        <div class="progress-per"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="js skill">
-                                <div class="icon"><i class="fa-brands fa-square-js icon-img"></i></div>
-                                <div class="skill-block">
-                                    <div class="block-header">Javascript</div>
-                                    <div class="block-section">DOM Manipulation, Event Handling</div>
-                                    <div class="progress-block">50%</div>
-                                    <div class="progress-bar">
-                                        <div class="progress-per"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="python skill">
-                                <div class="icon"><i class="fa-brands fa-python icon-img"></i></div>
-                                <div class="skill-block">
-                                    <div class="block-header">C/C++</div>
-                                    <div class="block-section">Graphics and Games, Graphics and Games</div>
-                                    <div class="progress-block">55%</div>
-                                    <div class="progress-bar">
-                                        <div class="progress-per"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="professional-skills skills-group-row">
-                        <div class="skills-group-header">Professional Skills</div>
-                        <div class="border-line"></div>
-                        <div class="skills-group">
-                            <div class="communication skill">
-                                <div class="icon"><i class="fa-solid fa-paper-plane icon-img"></i></div>
-                                <div class="skill-block">
-                                    <div class="block-header">communication</div>
-                                    <div class="block-section">Clear Messaging, Active Listening</div>
-                                    <div class="progress-block">85%</div>
-                                    <div class="progress-bar">
-                                        <div class="progress-per"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="team-work skill">
-                                <div class="icon"><i class="fa-solid fa-people-group icon-img"></i></div>
-                                <div class="skill-block">
-                                    <div class="block-header">Team Work</div>
-                                    <div class="block-section">Collaboration, Conflict Resolution</div>
-                                    <div class="progress-block">70%</div>
-                                    <div class="progress-bar">
-                                        <div class="progress-per"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="management skill">
-                                <div class="icon"><i class="fa-solid fa-hourglass-start icon-img"></i></div>
-                                <div class="skill-block">
-                                    <div class="block-header">Management</div>
-                                    <div class="block-section">Task Delegation, Time Management</div>
-                                    <div class="progress-block">65%</div>
-                                    <div class="progress-bar">
-                                        <div class="progress-per"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="creativity skill">
-                                <div class="icon"><i class="fa-solid fa-palette icon-img"></i></div>
-                                <div class="skill-block">
-                                    <div class="block-header">Creativity</div>
-                                    <div class="block-section">Innovative Solutions, Brainstorming</div>
-                                    <div class="progress-block">80%</div>
-                                    <div class="progress-bar">
-                                        <div class="progress-per"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <footer class="footer">
-            <div class="left">
-                &copy; 2024 •Syed Muzamil • All Rights Reserved
-            </div>
-            <div class="right">
-                <div class="social"><a href="https://www.facebook.com/syed.arhaanqadri.7/" target="_blank"><i
-                            class="fa-brands fa-facebook"></i></a></div>
-                <div class="social"><a href="https://www.instagram.com/ar_ha_an_qa_dri/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
-                <div class="social"><a href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
-                <div class="social"><a href="https://github.com/Syedarhaan76" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-            </div>
-        </footer>
-    </div>
-
-
-
-
-
+    <!-- Mobile Nav Backdrop -->
     <div class="nav-touch-close" id="nav-tc-js"></div>
 
-    <script type="text/javascript" src="../script/script.js"></script>
+    <div class="page">
+      <main class="skills-main">
+        <div class="skills-wrapper">
+          <!-- Page Header -->
+          <div class="center-text">
+            <div class="section-header-badge">
+              <i class="fa-solid fa-code"></i> Technical Matrix
+            </div>
+            <h1 class="section-title">Skills & Technologies</h1>
+            <p class="section-subtitle">
+              A comprehensive breakdown of tools, frameworks, and programming paradigms I utilize to engineer
+              scalable, blazing-fast web software.
+            </p>
+          </div>
 
-</body>
+          <!-- Skills Categories Grid -->
+          <div class="skills-category-grid">
+            <!-- Category 1: Frontend Engineering -->
+            <div class="skill-category-card">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon">
+                  <i class="fa-brands fa-react"></i>
+                </div>
+                <div>
+                  <h2 class="skill-cat-title">Frontend Engineering</h2>
+                  <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">
+                    Component Architecture & Modern UX
+                  </div>
+                </div>
+              </div>
 
+              <!-- Skill 1 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-brands fa-react"></i></span>
+                    <span class="skill-name">Next.js 15 & React 19</span>
+                  </div>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-solid fa-code"></i></span>
+                    <span class="skill-name">TypeScript & JavaScript (ESNext)</span>
+                  </div>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-brands fa-css3-alt"></i></span>
+                    <span class="skill-name">Tailwind CSS & Modern CSS3</span>
+                  </div>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 4 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                    <span class="skill-name">Framer Motion & Web Animations</span>
+                  </div>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 88%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 5 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-brands fa-html5"></i></span>
+                    <span class="skill-name">Semantic HTML5 & Accessibility (a11y)</span>
+                  </div>
+                  <span class="skill-percent">96%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 96%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 2: Backend, Systems & APIs -->
+            <div class="skill-category-card">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon">
+                  <i class="fa-solid fa-server"></i>
+                </div>
+                <div>
+                  <h2 class="skill-cat-title">Backend & Systems</h2>
+                  <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">
+                    Scalable Services & Logic
+                  </div>
+                </div>
+              </div>
+
+              <!-- Skill 1 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-brands fa-node-js"></i></span>
+                    <span class="skill-name">Node.js & Express REST APIs</span>
+                  </div>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-solid fa-database"></i></span>
+                    <span class="skill-name">PostgreSQL & MongoDB Database Design</span>
+                  </div>
+                  <span class="skill-percent">82%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 82%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-solid fa-microchip"></i></span>
+                    <span class="skill-name">C & C++ Programming Fundamentals</span>
+                  </div>
+                  <span class="skill-percent">78%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 78%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 4 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-brands fa-git-alt"></i></span>
+                    <span class="skill-name">Git, GitHub & CI/CD Pipelines</span>
+                  </div>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 5 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-solid fa-cloud"></i></span>
+                    <span class="skill-name">Vercel Edge, Docker & Cloud Hosting</span>
+                  </div>
+                  <span class="skill-percent">84%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 84%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 3: Performance, SEO & Quality Assurance -->
+            <div class="skill-category-card">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon">
+                  <i class="fa-solid fa-gauge-high"></i>
+                </div>
+                <div>
+                  <h2 class="skill-cat-title">Performance & SEO</h2>
+                  <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">
+                    Core Web Vitals & Optimization
+                  </div>
+                </div>
+              </div>
+
+              <!-- Skill 1 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-solid fa-bolt"></i></span>
+                    <span class="skill-name">Lighthouse 95+ Core Web Vitals</span>
+                  </div>
+                  <span class="skill-percent">98%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 98%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-solid fa-magnifying-glass-chart"></i></span>
+                    <span class="skill-name">Automated Technical SEO & Schema</span>
+                  </div>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 92%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-solid fa-mobile-screen"></i></span>
+                    <span class="skill-name">Fluid Responsive Layouts (Mobile to 4K)</span>
+                  </div>
+                  <span class="skill-percent">96%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 96%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 4: Professional Competencies -->
+            <div class="skill-category-card">
+              <div class="skill-cat-header">
+                <div class="skill-cat-icon">
+                  <i class="fa-solid fa-handshake"></i>
+                </div>
+                <div>
+                  <h2 class="skill-cat-title">Professional Mastery</h2>
+                  <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono);">
+                    Teamwork & Leadership
+                  </div>
+                </div>
+              </div>
+
+              <!-- Skill 1 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-solid fa-comments"></i></span>
+                    <span class="skill-name">Clear Technical Communication</span>
+                  </div>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 95%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 2 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-solid fa-people-group"></i></span>
+                    <span class="skill-name">Agile Sprint Collaboration & PR Reviews</span>
+                  </div>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 90%;"></div>
+                </div>
+              </div>
+
+              <!-- Skill 3 -->
+              <div class="skill-item-row">
+                <div class="skill-meta">
+                  <div class="skill-name-wrap">
+                    <span class="skill-icon-pill"><i class="fa-solid fa-lightbulb"></i></span>
+                    <span class="skill-name">Product Vision & Problem Solving</span>
+                  </div>
+                  <span class="skill-percent">94%</span>
+                </div>
+                <div class="skill-track">
+                  <div class="skill-progress-bar" style="width: 94%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="left">
+          &copy; 2026 <span class="author">Syed Muzamil Qadri</span> • Engineered with passion & precision.
+        </div>
+        <div class="right">
+          <a
+            href="https://github.com/Syedarhaan76"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="GitHub profile"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/syed-muzamil-qadri-219386221/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="LinkedIn profile"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ar_ha_an_qa_dri/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Instagram profile"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com/syed.arhaanqadri.7/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-social-btn"
+            aria-label="Facebook profile"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="../script/script.js"></script>
+  </body>
 </html>
