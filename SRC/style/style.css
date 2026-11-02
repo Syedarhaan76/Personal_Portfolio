@@ -374,9 +374,9 @@ header.header.scrolled {
    HERO / ABOUT SECTION (HOMEPAGE)
    ========================================================================== */
 .about {
-  min-height: 100vh;
-  padding-top: 140px;
-  padding-bottom: 60px;
+  min-height: calc(100vh - 70px);
+  padding-top: 110px;
+  padding-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -579,36 +579,20 @@ header.header.scrolled {
 .hero-avatar-wrapper {
   position: relative;
   width: 100%;
-  max-width: 440px;
+  max-width: 380px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Glowing Aura behind image */
-.hero-avatar-glow {
-  position: absolute;
-  width: 380px;
-  height: 380px;
-  background: radial-gradient(circle, rgba(6, 182, 212, 0.35) 0%, rgba(139, 92, 246, 0.25) 50%, transparent 70%);
-  filter: blur(45px);
-  z-index: 0;
-  animation: pulse-glow 6s ease-in-out infinite alternate;
-}
-
-@keyframes pulse-glow {
-  0% { transform: scale(0.9) rotate(0deg); opacity: 0.6; }
-  100% { transform: scale(1.15) rotate(15deg); opacity: 0.9; }
-}
-
 .hero-avatar-frame {
   position: relative;
   z-index: 2;
-  border-radius: 32px;
-  padding: 10px;
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.4), rgba(139, 92, 246, 0.2), rgba(255, 255, 255, 0.05));
-  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(12px);
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
   transition: transform var(--transition-smooth);
 }
 
@@ -618,84 +602,16 @@ header.header.scrolled {
 
 .hero-avatar-frame img {
   width: 100%;
-  max-width: 360px;
+  max-width: 340px;
   height: auto;
-  border-radius: 24px;
+  border-radius: 0;
   display: block;
   object-fit: cover;
-  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 15px 35px rgba(6, 182, 212, 0.3));
 }
 
-/* Floating Glass Badges on Avatar */
 .floating-badge {
-  position: absolute;
-  z-index: 3;
-  padding: 10px 16px;
-  border-radius: 14px;
-  background: rgba(15, 23, 42, 0.88);
-  backdrop-filter: blur(14px);
-  border: 1px solid var(--border-medium);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  animation: float-badge 4s ease-in-out infinite alternate;
-}
-
-.badge-top-left {
-  top: 15%;
-  left: -20px;
-  animation-delay: 0s;
-}
-
-.badge-bottom-right {
-  bottom: 12%;
-  right: -25px;
-  animation-delay: 2s;
-}
-
-@keyframes float-badge {
-  0% { transform: translateY(0px); }
-  100% { transform: translateY(-10px); }
-}
-
-.floating-badge .badge-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-}
-
-.badge-icon.speed {
-  background: rgba(16, 185, 129, 0.2);
-  color: #34d399;
-  border: 1px solid rgba(16, 185, 129, 0.3);
-}
-
-.badge-icon.code {
-  background: rgba(56, 189, 248, 0.2);
-  color: var(--cyan-light);
-  border: 1px solid rgba(56, 189, 248, 0.3);
-}
-
-.floating-badge .badge-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.floating-badge .badge-title {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #fff;
-}
-
-.floating-badge .badge-sub {
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  font-family: var(--font-mono);
+  display: none !important;
 }
 
 /* ==========================================================================
