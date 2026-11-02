@@ -1999,3 +1999,31 @@ footer.footer {
   from { opacity: 0; transform: scale(0.96); }
   to { opacity: 1; transform: scale(1); }
 }
+
+/* ==========================================================================
+   BLOCK NETLIFY HUD / BADGE INJECTION
+   ========================================================================== */
+#nl-badge-frame,
+#nl-hud-frame,
+iframe[id*="nl-"],
+iframe[title*="Netlify"],
+iframe[src*="netlify"],
+iframe[srcdoc*="Netlify"],
+[data-netlify-drawer],
+.netlify-badge,
+.nl-card,
+.nl-badge {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  max-width: 0 !important;
+  max-height: 0 !important;
+  clip-path: path("M0 0Z") !important;
+  position: absolute !important;
+  left: -99999px !important;
+  top: -99999px !important;
+  z-index: -99999 !important;
+}

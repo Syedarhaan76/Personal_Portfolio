@@ -4,6 +4,42 @@
  * Project Filtering, Modal Drawers, Animated Counters, and Navigation Logic.
  */
 
+// Block Netlify HUD / Badge injection script before it runs
+(function blockNetlifyHud() {
+  function insertDummies() {
+    ['nl-badge-frame', 'nl-hud-frame'].forEach((id) => {
+      if (!document.getElementById(id)) {
+        const dummy = document.createElement('div');
+        dummy.id = id;
+        dummy.style.cssText = 'display:none!important;width:0!important;height:0!important;opacity:0!important;position:absolute!important;left:-9999px!important;';
+        (document.head || document.documentElement).appendChild(dummy);
+      }
+    });
+  }
+  insertDummies();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', insertDummies);
+  }
+
+  // Active mutation observer to remove any Netlify iframe immediately
+  const observer = new MutationObserver((mutations) => {
+    for (const mutation of mutations) {
+      for (const node of mutation.addedNodes) {
+        if (
+          node.nodeName === 'IFRAME' &&
+          (node.id === 'nl-badge-frame' ||
+            node.id === 'nl-hud-frame' ||
+            (node.title && node.title.includes('Netlify')) ||
+            (node.src && node.src.includes('netlify')))
+        ) {
+          node.remove();
+        }
+      }
+    }
+  });
+  observer.observe(document.documentElement, { childList: true, subtree: true });
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
   initAmbientCanvas();
   initNavbar();
